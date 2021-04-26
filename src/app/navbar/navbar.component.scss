@@ -29,5 +29,11 @@
     line-height: 15px;
   }
   .nav-button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(125.93deg, #ecb800 21.38%, #51df2e 122.38%);
+
+    border-radius: 10px;
   }
 }
