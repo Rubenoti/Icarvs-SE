@@ -7,20 +7,18 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Navbar2Component } from './navbar2/navbar2.component';
 import { FooterComponent } from './footer/footer.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
-  declarations: [				
+  declarations: [
     AppComponent,
-      HomeComponent,
-      NavbarComponent,
-      Navbar2Component,
-      FooterComponent
-   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
+    HomeComponent,
+    NavbarComponent,
+    Navbar2Component,
+    FooterComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule, IvyCarouselModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
