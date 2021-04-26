@@ -1,0 +1,33 @@
+.container {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.19);
+  height: 85px;
+
+  .logo-box {
+    .icon {
+      width: 68px;
+      height: 67px;
+      position: relative;
+    }
+  }
+  .nav-link {
+    padding: 15px;
+  }
+  .logo {
+    width: 150px;
+    height: 100px;
+  }
+  .nav-link-colored {
+    font-size: 18px;
+    font-family: aleo;
+    background: linear-gradient(FFBC2C, 91ff04);
+  }
+  .nav-link {
+    font-size: 16px;
+    padding: 20px;
+    color: black;
+    font-family: aleo;
+    line-height: 15px;
+  }
+  .nav-button {
+  }
+}
