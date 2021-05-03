@@ -10,6 +10,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { MdbModule } from 'mdb-angular-ui-kit';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MdbModule,
     BrowserAnimationsModule,
     MatExpansionModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

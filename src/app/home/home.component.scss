@@ -151,3 +151,11 @@
   }
   }
 
+  .info-container {
+  margin: auto;
+  width: 100%;
+  mat-grid-tile {
+    background: lightblue;
+  }
+}
+

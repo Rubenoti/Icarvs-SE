@@ -1,5 +1,7 @@
 .navbar {
-  height: 78px;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
 
   .nav-link {
     padding: 30px;
@@ -22,25 +24,23 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
   }
+  .container-logoIcon {
+    float: left;
+    margin: auto;
+    margin-left: 5%;
+    width: fit-content;
   .logo {
-    position: absolute;
     width: 68px;
     height: 67px;
-    left: 120px;
-    top: 7px;
     opacity: 100%;
   }
   .icon {
-    position: absolute;
     width: 127px;
     height: 28px;
-    left: 190px;
-    top: 26px;
+  }
   }
   .btnZone {
-    position: fixed;
-    left: 1195px;
-    top: 10px;
+    float: right;
     width: 200px;
     height: 50px;
     background: linear-gradient(125.93deg, #ecb800 21.38%, #51df2e 122.38%);
@@ -52,5 +52,6 @@
     letter-spacing: 0.1em;
     color: #ffffff;
     border-radius: 10px;
+    z-index: 99999;
   }
 }
