@@ -21,13 +21,22 @@
           <a class="nav-link" href="#">Conócenos</a>
         </li>
         <li class="nav-item">
-        <li class="nav-item dropdown colorText" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+        <!-- <li class="nav-item dropdown colorText" dropdown> -->
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Nuestros Servicios <span class="caret"></span>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Simulador</p>
+            <p>Comparador</p>
+          </mat-expansion-panel>
+          <!-- <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
             Nuestros Servicios <span class="caret"></span></a>
           <div *dropdownMenu class="dropdown-menu-right" role="menu">
             <a class="dropdown-item waves-light" mdbWavesEffect href="#">Simulador</a>
             <a class="dropdown-item waves-light" mdbWavesEffect href="#">Comparador</a>
-          </div>
+          </div> -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>

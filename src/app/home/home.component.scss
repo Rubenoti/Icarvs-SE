@@ -16,7 +16,7 @@
             padding-bottom: 10px;
             .underlined {
                 position: relative;
-                margin-right: 1rem;
+                margin-right: 0;
             }
             .underlined:after {
                 content: "";
@@ -65,7 +65,7 @@
           margin-bottom: 30px;
           .underlined {
               position: relative;
-              margin-right: 1rem;
+              margin-right: 0;
           }
           .underlined:after {
               content: "";
@@ -115,15 +115,15 @@
           font-size: 22px;
           .underlined {
             position: relative;
-            margin-right: 1rem;
+            margin-right: 0;
         }
         .underlined:after {
             content: "";
             position: absolute;
             bottom: -18px;
-            left: -5px;
+            left: 0;
             height: 20px;
-            width: 105%;
+            width: 100%;
             border: solid 2px #0e7c2a;
             border-color: #0e7c2a transparent transparent transparent;
             border-radius: 50%;
