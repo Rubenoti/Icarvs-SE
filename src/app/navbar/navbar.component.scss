@@ -26,7 +26,8 @@
   }
   .container-logoIcon {
     float: left;
-    margin-left: 6%;
+    margin: auto;
+    margin-left: 5%;
     width: fit-content;
     .logo {
       width: 68px;
@@ -40,7 +41,6 @@
   }
   .btnZone {
     float: right;
-    margin-right: 5%;
     width: 200px;
     height: 50px;
     background: linear-gradient(125.93deg, #ecb800 21.38%, #51df2e 122.38%);
