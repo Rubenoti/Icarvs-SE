@@ -1,11 +1,13 @@
 .carousel-container {
     margin: auto;
     width: auto;
-    img {
-        height: 450px;
+    .carousel-fade {
+        img {
+        margin-top: 100px;
+        height: 500px;
         object-fit: cover;
     }
-
+  }
       margin-top: 100px;
     .caption-1 {
         h5 {
@@ -88,8 +90,8 @@
           transition: all 0.3s ease 0s;
           padding: 10px;
           background-color:  #0e7c2a;
-          margin-bottom: 260px;
-          margin-left: 300px;
+          margin-bottom: 320px;
+          margin-left: 760px;
           color: black;
           font-size: medium;
           font-weight: bold;
