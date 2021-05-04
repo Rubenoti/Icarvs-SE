@@ -14,7 +14,7 @@
     color: black;
   }
   .colorText {
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
     background-size: 100%;
     background: linear-gradient(90deg, #ffbc2c 21.27%, #91ff04 77.99%);
@@ -29,15 +29,15 @@
     margin: auto;
     margin-left: 5%;
     width: fit-content;
-  .logo {
-    width: 68px;
-    height: 67px;
-    opacity: 100%;
-  }
-  .icon {
-    width: 127px;
-    height: 28px;
-  }
+    .logo {
+      width: 68px;
+      height: 67px;
+      opacity: 100%;
+    }
+    .icon {
+      width: 127px;
+      height: 28px;
+    }
   }
   .btnZone {
     float: right;
