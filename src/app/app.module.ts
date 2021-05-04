@@ -11,16 +11,18 @@ import { MdbModule } from 'mdb-angular-ui-kit';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { Home2Component } from './Home2/Home2.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     NavbarComponent,
     Navbar2Component,
     FooterComponent,
-  ],
+      Home2Component
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

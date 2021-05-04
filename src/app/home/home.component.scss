@@ -8,7 +8,6 @@
         object-fit: cover;
     }
   }
-      margin-top: 100px;
     .caption-1 {
         h5 {
             color: black;
@@ -46,7 +45,7 @@
             box-shadow: 0px 8px 15px rgba(0.3, 4, 10, 2);
             transition: all 0.3s ease 0s;
             padding: 10px;
-            background-color:  #0e7c2a;
+            background-color: #49b82d;
             margin-right: 450px;
             color: black;
             font-size: medium;
@@ -64,7 +63,7 @@
           color: black;
           font-size: xx-large;
           font-weight: bold;
-          margin-bottom: 30px;
+          margin-bottom: 10px;
           .underlined {
               position: relative;
               margin-right: 0;
@@ -89,9 +88,10 @@
           box-shadow: 0px 8px 15px rgba(0.3, 4, 10, 2);
           transition: all 0.3s ease 0s;
           padding: 10px;
-          background-color:  #0e7c2a;
-          margin-bottom: 320px;
-          margin-left: 760px;
+          background-color:  #49b82d;
+          margin-bottom: 330px;
+          margin-top: 10px;
+          margin-left: 640px;
           color: black;
           font-size: medium;
           font-weight: bold;
@@ -139,7 +139,7 @@
           box-shadow: 0px 8px 15px rgba(0.3, 4, 10, 2);
           transition: all 0.3s ease 0s;
           padding: 10px;
-          background-color:  #0e7c2a;
+          background-color:  #49b82d;
           margin-right: 460px;
           color: black;
           font-size: medium;
@@ -151,13 +151,72 @@
           }
       }
   }
-  }
+}
 
   .info-container {
   margin: auto;
   width: 100%;
+  img {
+    height: 70px;
+    width: 70px;
+  }
+
   mat-grid-tile {
-    background: lightblue;
+    background: none;
+  }
+  mat-grid-tile-header {
+    height: 100px;
+    background-color: white;
+    h2 {
+      margin-bottom: 20px;
+      color: black;
+    }
+  }
+}
+
+.form-container {
+  label {
+    display: block;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    min-width: 50px;
+  }
+  input, textarea {
+    border: 1px solid #ccc;
+    padding: 4px 0;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  input[type=submit] {
+    background:  #49b82d;
+    border: 0;
+    color: #fff;
+    padding: 8px 16px;
+    transition: background 0.2s;
+  }
+  input[type=submit]:not(:disabled):hover {
+    background: #b4b63f;;
+  }
+  input[type=submit]:not(:disabled):active {
+    background:  #49b82d
+  }
+  input[disabled] {
+    opacity: 0.5;
+  }
+  .container {
+    background: #fff;
+    box-shadow: 0 2px 4px #888;
+    margin: auto;
+    padding: 16px;
+    max-width: 600px;
+  }
+  .form-group {
+    margin-bottom: 16px;
+  }
+  input.ng-invalid.ng-dirty,
+  textarea.ng-invalid.ng-dirty{
+    border-color: red;
+    box-shadow: 0 0 4px red;
   }
 }
 
