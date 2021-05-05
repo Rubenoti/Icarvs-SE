@@ -25,7 +25,7 @@
     "@popperjs/core": "^2.9.2",
     "angular-responsive-carousel": "^2.0.2",
     "bootstrap": "^4.0.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.6.0",
     "material-components-web": "^10.0.0",
     "mdb-angular-ui-kit": "^1.0.0-beta3",
     "popper.js": "^1.16.1",
