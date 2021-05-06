@@ -1,8 +1,24 @@
+// .info-container {
+//   margin: auto;
+//   width: 100%;
+//   background-color: rgba(43, 88, 12, 0.29);
+//   position: absolute;
+//   width: 816px;
+//   height: 347px;
+//   left: 91px;
+//   top: 700px;
+//   .text-container {
+//     margin-bottom: 300px;
+//   }
+// }
 .info-container {
   margin: auto;
-  width: 100%;
+  width: 150%;
+  background-color: rgba(43, 88, 12, 0.29);
+  z-index: 9999;
   img {
     padding: 20px;
+    border-radius: 50%;
   }
   h1 {
     margin-bottom: 20px;
@@ -12,49 +28,23 @@
   }
 }
 
-.form-container {
-  label {
-    display: block;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-    min-width: 50px;
-  }
-  input, textarea {
-    border: 1px solid #ccc;
-    padding: 4px 0;
-    width: 100%;
-    -webkit-appearance: none;
-  }
-  input[type=submit] {
-    background:  #49b82d;
-    border: 0;
-    color: #fff;
-    padding: 8px 16px;
-    transition: background 0.2s;
-  }
-  input[type=submit]:not(:disabled):hover {
-    background: #b4b63f;;
-  }
-  input[type=submit]:not(:disabled):active {
-    background:  #49b82d
-  }
-  input[disabled] {
-    opacity: 0.5;
-  }
-  .container {
-    background: #fff;
-    box-shadow: 0 2px 4px #888;
-    margin: auto;
-    padding: 16px;
-    max-width: 600px;
-  }
-  .form-group {
-    margin-bottom: 16px;
-  }
-  input.ng-invalid.ng-dirty,
-  textarea.ng-invalid.ng-dirty{
-    border-color: red;
-    box-shadow: 0 0 4px red;
-  }
+.text-container {
+position: absolute;
+height: 600px;
+width: 700px;
+background: #FDF30A;
+box-shadow: 8px 10px 8px rgba(43, 88, 12, 0.72);
+border-radius: 50px;
+h1 {
+font-style: normal;
+margin-top: 20px;
+font-weight: 500;
+font-size: 40px;
+line-height: 30px;
+display: flex;
+text-align: center;
+color: #2B580C;
+text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.37)
+}
 }
 

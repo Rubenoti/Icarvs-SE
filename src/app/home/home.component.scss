@@ -1,10 +1,9 @@
 .carousel-container {
-  width: auto;
-  img {
-    height: 659px;
-    width: 1024px;
-    left: 0px;
-    top: 71px;
+   width: auto;
+   padding-top: 8%;
+    img {
+    object-fit: cover;
+    height: 550px;
     border-radius: 0px;
   }
     .caption-1 {
@@ -44,7 +43,7 @@
             box-shadow: 0px 8px 15px rgba(0.3, 4, 10, 2);
             transition: all 0.3s ease 0s;
             padding: 10px;
-            background-color: #49b82d;
+            background-color: #2B580C;
             margin-right: 450px;
             color: black;
             font-size: medium;
@@ -62,7 +61,7 @@
           color: black;
           font-size: xx-large;
           font-weight: bold;
-          margin-bottom: 10px;
+          margin-bottom: 330px;
           .underlined {
               position: relative;
               margin-right: 0;
@@ -79,7 +78,7 @@
               border-radius: 50%;
           }
         }
-          .button-3 {
+          .button-2 {
 
             width: fit-content;
             border-radius: 16px;
@@ -87,7 +86,7 @@
             box-shadow: 0px 8px 15px rgba(0.3, 4, 10, 2);
             transition: all 0.3s ease 0s;
             padding: 10px;
-            background-color: #49b82d;
+            background-color: #2B580C;
             margin-right: 450px;
             color: black;
             font-size: medium;
@@ -136,7 +135,7 @@
           box-shadow: 0px 8px 15px rgba(0.3, 4, 10, 2);
           transition: all 0.3s ease 0s;
           padding: 10px;
-          background-color:  #49b82d;
+          background-color:  #2B580C;
           margin-right: 460px;
           color: black;
           font-size: medium;
@@ -149,70 +148,19 @@
     }
   }
 }
-
-.info-container {
-  margin: auto;
-  width: 100%;
-  img {
-    height: 70px;
-    width: 70px;
+.arrow-container {
+ margin-left: 50%;
+ margin-right: 50%;
+ margin-top: 1%;
+ button {
+  color: #2B580C;
+  border: none;
+  background-color: white;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    transform: translateY(7px);
+    color:#b4b63f;
   }
-
-  mat-grid-tile {
-    background: none;
-  }
-  mat-grid-tile-header {
-    height: 100px;
-    background-color: white;
-    h2 {
-      margin-bottom: 20px;
-      color: black;
-    }
   }
 }
 
-.form-container {
-  label {
-    display: block;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-    min-width: 50px;
-  }
-  input, textarea {
-    border: 1px solid #ccc;
-    padding: 4px 0;
-    width: 100%;
-    -webkit-appearance: none;
-  }
-  input[type=submit] {
-    background:  #49b82d;
-    border: 0;
-    color: #fff;
-    padding: 8px 16px;
-    transition: background 0.2s;
-  }
-  input[type=submit]:not(:disabled):hover {
-    background: #b4b63f;;
-  }
-  input[type=submit]:not(:disabled):active {
-    background:  #49b82d
-  }
-  input[disabled] {
-    opacity: 0.5;
-  }
-  .container {
-    background: #fff;
-    box-shadow: 0 2px 4px #888;
-    margin: auto;
-    padding: 16px;
-    max-width: 600px;
-  }
-  .form-group {
-    margin-bottom: 16px;
-  }
-  input.ng-invalid.ng-dirty,
-  textarea.ng-invalid.ng-dirty{
-    border-color: red;
-    box-shadow: 0 0 4px red;
-  }
-}
