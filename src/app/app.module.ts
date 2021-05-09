@@ -13,17 +13,19 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { Home2Component } from './Home2/Home2.component';
 import { Home3Component } from './home3/home3.component';
+import { BlogComponent } from './Blog/Blog.component';
 
 
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
     HomeComponent,
     NavbarComponent,
     Navbar2Component,
     FooterComponent,
       Home2Component,
-      Home3Component
+      Home3Component,
+      BlogComponent
    ],
   imports: [
     BrowserModule,
