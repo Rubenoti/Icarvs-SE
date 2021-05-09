@@ -1,60 +1,144 @@
 .info-container {
+  position: relative;
+  z-index: 1;
   margin: auto;
+  height: 380px;
   width: 100%;
-  img {
-    padding: 20px;
+  margin-bottom: 500px;
+  background-color: rgba(43, 88, 12, 0.29);
+    h2 {
+  color: black;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 25px;
+  text-align: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
   }
-  h1 {
-    margin-bottom: 20px;
+    p {
+  width: 100%;
+  color: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 85px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
   }
-  mat-grid-tile {
-    background: none;
-  }
-}
 
-.form-container {
-  label {
-    display: block;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-    min-width: 50px;
-  }
-  input, textarea {
-    border: 1px solid #ccc;
-    padding: 4px 0;
+ .column-1 {
+    img {
+    z-index: 5;
+    position: absolute;
+    height: 360px;
+    border-radius: 40%;
+    top: 210px;
+    left: 180px;
+   }
+}
+.column-2 {
+  z-index: -1;
+  .text-container {
+    position: relative;
+    margin-top: 160px;
+    height: 500px;
+    width: 500px;
+    background: #FDF30A;
+    box-shadow: 8px 10px 8px rgba(43, 88, 12, 0.72);
+    border-radius: 50px;
+    h1 {
+    padding-top: 45px;
+    position: absolute;
     width: 100%;
-    -webkit-appearance: none;
-  }
-  input[type=submit] {
-    background:  #49b82d;
-    border: 0;
-    color: #fff;
-    padding: 8px 16px;
-    transition: background 0.2s;
-  }
-  input[type=submit]:not(:disabled):hover {
-    background: #b4b63f;;
-  }
-  input[type=submit]:not(:disabled):active {
-    background:  #49b82d
-  }
-  input[disabled] {
-    opacity: 0.5;
-  }
-  .container {
-    background: #fff;
-    box-shadow: 0 2px 4px #888;
-    margin: auto;
-    padding: 16px;
-    max-width: 600px;
-  }
-  .form-group {
-    margin-bottom: 16px;
-  }
-  input.ng-invalid.ng-dirty,
-  textarea.ng-invalid.ng-dirty{
-    border-color: red;
-    box-shadow: 0 0 4px red;
-  }
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #2B580C;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.37);
+    }
+
+    .list-container {
+      display: flex;
+    ul {
+      width: 75%;
+      position: absolute;
+      margin-left: 30px;
+      top: 150px;
+      text-align: center;
+    li {
+    list-style-position:initial;
+    padding: 15px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    }
+    }
+    }
+    }
+
+    }
+  .input-container {
+       display: flow-root;
+       position: absolute;
+       z-index: 10;
+        width: 85%;
+        margin-top: -80px;
+        box-sizing: border-box;
+        border-radius: 19px;
+        box-shadow: 0px 2px 15px rgb(193 99 139 /12%);
+        .input-adress {
+           background: #FFFFFE;
+           border-radius: 40px;
+            border: 1px solid #2B580C;
+            box-shadow: 5px 3px 6px #2B580C;
+            height: 50px;
+            font-size: 18px;
+            line-height: 21px;
+            color: rgba(0, 0, 0, 0.340544);
+            width: 80%;
+            padding: 20px;
+            margin-right: 10px;
+
+            img {
+            position: absolute;
+            top: 200px;
+            right: 500px;
+
+            }
+        }
+        .btn {
+          background: #FFFFFE;
+          border: 1px solid #2B580C;
+          box-shadow: 5px 3px 6px #2B580C;
+          border-radius: 40px;
+          text-transform: capitalize;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+          color: #2B580C;
+          width: 16%;
+          padding: 10px 10px;
+          text-align: center;
+            &:hover {
+                background-color: #e1f813;
+            }
+        }
+    }
 }
 

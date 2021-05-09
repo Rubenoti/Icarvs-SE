@@ -1,30 +1,29 @@
 <div class="container info-container mt-4">
-  <mat-grid-list cols="2" rowHeight="1:1.2" gutterSize="2px">
-    <mat-grid-tile>1
-       <mat-grid-tile-header>dfasdfadfa</mat-grid-tile-header></mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>
-      <img src="../../assets/people-sun.jpg" class="d-block w-100" alt="sol" />
-
-    </mat-grid-tile>
-    <mat-grid-tile>
-      <div class="container form-container" ng-app="ContactForm">
-      <h1>Contacto</h1>
-      <form name="cf" ng-controller="cfController as cfCtrl" ng-submit="submitForm(cf.$valid)" novalidate>
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input id="name" type="text" name="name" ng-model="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email">
-        </div>
-        <div class="form-group">
-          <label for="msg">Tu mensaje</label>
-          <textarea id="msg" name="message" rows="4" ng-model="msg" required></textarea>
-        </div>
-        <input type="submit" value="Enviar" ng-disabled="cf.$invalid"/>
-      </form>
-    </div></mat-grid-tile>
-  </mat-grid-list>
+    <h2>Sácale todo el partido a tu tejado,</h2>
+    <p>y empieza a ahorrar en tu factura de la luz</p>
+   <div class="row">
+  <div class="col-xs-6 col-sm-3 col-md-4 col-lg-4 column-1">
+      <img src="../../assets/2292_R0lVIEFOTiAwNTYtOTI.jpg" class="d-block w-100" alt="sol" />
+    </div>
+  <div class="col-xs-6 col-sm-9 col-md-8 col-lg-8 column-2">
+      <div class="container text-container" ng-app="ContactForm">
+      <h1>¿Quieres saber cuánta energía <br>puedes producir?</h1>
+      <div class="container list-container">
+      <ul>
+        <li>Descubre tu ahorro</li>
+        <li>Recibe una oferta personalizada</li>
+        <li>Obtén la mejor instalación</li>
+      </ul>
+    </div>
   </div>
+  <div class="container input-container">
+    <input type="text" class="search-input input-adress" placeholder="Introduce tu dirección">
+    <button type="button" class="btn">Simular</button>
+    <img src="../../assets/search.svg" alt="Buscar" />
+  </div>
+  </div>
+</div>
+</div>
+
+
+
