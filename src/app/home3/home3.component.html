@@ -1,8 +1,5 @@
 <div class="container info-container mt-4">
   <mat-grid-list cols="2" rowHeight="1:1" gutterSize="2px">
-      <mat-grid-tile>
-      <img src="../../assets/dibujo-formulario.jpg" class="d-block w-100" alt="sol" />
-    </mat-grid-tile>
     <mat-grid-tile>
       <div class="container form-container" ng-app="ContactForm">
       <h1>Contacto</h1>
@@ -21,6 +18,10 @@
         </div>
         <input type="submit" value="Enviar" ng-disabled="cf.$invalid"/>
       </form>
-    </div></mat-grid-tile>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="../../assets/dibujo-formulario.jpg" class="d-block w-100" alt="sol" />
+  </mat-grid-tile>
   </mat-grid-list>
   </div>
