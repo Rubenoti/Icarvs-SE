@@ -3,6 +3,10 @@
   position: fixed;
   z-index: 99999;
   width: 100%;
+  .icon {
+    width: 127px;
+    height: 28px;
+  }
   .container-links {
     margin: auto;
     width: auto;
@@ -24,10 +28,6 @@
         width: 68px;
         height: 67px;
         opacity: 100%;
-      }
-      .icon {
-        width: 127px;
-        height: 28px;
       }
     }
     .btnZone {
