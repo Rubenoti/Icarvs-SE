@@ -15,10 +15,11 @@ import { Home2Component } from './Home2/Home2.component';
 import { Home3Component } from './home3/home3.component';
 import { BlogComponent } from './Blog/Blog.component';
 import { MainHomeComponent } from './mainHome/mainHome.component';
+import { Home4Component } from './home4/home4.component';
 
 
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
     HomeComponent,
     NavbarComponent,
@@ -27,7 +28,8 @@ import { MainHomeComponent } from './mainHome/mainHome.component';
       Home2Component,
       Home3Component,
       BlogComponent,
-      MainHomeComponent
+      MainHomeComponent,
+      Home4Component
    ],
   imports: [
     BrowserModule,

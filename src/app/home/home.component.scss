@@ -9,8 +9,8 @@
   }
   .caption-1 {
     h5 {
+      opacity: 95%;
       margin-bottom: 3em;
-      margin-right: 8em;
       font-size: calc(2.2em + 1vw);
       line-height: 1.1em;
       letter-spacing: 0.1em;
@@ -159,7 +159,7 @@
       background-color: rgb(247, 227, 47);
       margin-right: 460px;
       color: black;
-      font-size: x-large;
+      font-size: larger;
       font-weight: bold;
       cursor: pointer;
       &:hover {
@@ -173,7 +173,8 @@
   display: block;
   text-align: center;
   padding: 20px;
-  button {
+  border: none;
+  a {
     color: #2b580c;
     border: none;
     background-color: white;
