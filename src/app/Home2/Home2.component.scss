@@ -4,7 +4,6 @@
   margin: auto;
   height: 400px;
   width: 100%;
-  margin-bottom: 32em;
   background-color: rgba(43, 88, 12, 0.29);
   h2 {
     width: 100%;
@@ -52,7 +51,8 @@
   .column-2 {
     z-index: -1;
     .text-container {
-      position: relative;
+      position: absolute;
+      z-index: 99999;
       margin-top: 160px;
       margin-left: -100px;
       height: 500px;
@@ -145,17 +145,16 @@
     }
   }
 }
-
 .arrow-container {
-  margin-left: 50%;
-  margin-right: 50%;
-  margin-top: -180px;
-  button {
+  display: block;
+  text-align: center;
+  a {
     color: #2b580c;
     border: none;
     background-color: white;
     transition: all 0.3s ease 0s;
     &:hover {
+      text-decoration: none;
       transform: translateY(7px);
       color: rgb(247, 227, 47);
     }
@@ -183,7 +182,7 @@
       width: 300px;
       position: absolute;
       left: -54%;
-      top: -5%;
+
       .input-container {
         max-width: 400px;
       }
