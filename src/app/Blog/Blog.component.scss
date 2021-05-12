@@ -10,9 +10,35 @@
     display: inline-block;
   }
 
-  .card-title {
+  h1 {
     position: absolute;
-    text-align: center;
-    top: 0;
+    bottom: 8em;
+    left: 3.6em;
+    line-height: 15px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+  }
+  h3 {
+    position: absolute;
+    bottom: 10em;
+    left: 5.5em;
+    line-height: 15px;
+    color: black;
+    -webkit-text-stroke: 1px white;
+  }
+  .colorText {
+    h4 {
+      font-family: Aleo;
+      font-style: normal;
+      font-weight: bold;
+      border: none;
+      background-size: 100%;
+      background: linear-gradient(92.66deg, #959eaa 1.71%, #304126 35.22%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
   }
 }
