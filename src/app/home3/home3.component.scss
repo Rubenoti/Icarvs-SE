@@ -6,7 +6,7 @@ img {
   background: #f3ef82;
   width: 80%;
   height: 500px;
-  margin-left: 0;
+  margin-left: 80px;
   box-shadow: 8px 10px 8px rgba(43, 88, 12, 0.72);
   border-radius: 50px;
   h1 {
@@ -16,10 +16,10 @@ img {
     letter-spacing: 0.1em;
     margin-right: 8em;
     color: rgba(43, 88, 12, 0.72);
-    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.37);
+    text-shadow: 3px 2px 4px rgba(57, 58, 56, 0.72);
     font-weight: 600;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
   }
   label {
     display: block;
@@ -37,14 +37,19 @@ img {
   }
   .form-button {
     background-color: rgba(43, 88, 12, 0.72);
+    color: white;
+    box-shadow: 4px 3px 4px rgba(22, 22, 22, 0.37);
+    transition: all 0.3 ease-out;
     border-radius: 50px;
+    border-color: rgba(43, 88, 12, 0.72);
     display: block;
     text-align: center;
     font-size: large;
     width: 73%;
     padding: 10px;
+    font-weight: 500;
     &:hover {
-      background-color: #ccc;
+      background-color: rgb(255, 255, 253);
       color: black;
     }
   }

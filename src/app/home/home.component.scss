@@ -2,6 +2,7 @@
   position: relative;
   width: auto;
   padding-top: 130px;
+  margin-bottom: 50px;
   img {
     object-fit: cover;
     height: 550px;
@@ -170,16 +171,17 @@
   }
 }
 .arrow-container {
+  position: relative;
   display: block;
   text-align: center;
-  padding: 20px;
-  border: none;
+  top: -25px;
   a {
     color: #2b580c;
     border: none;
-    background-color: white;
+    background-color: none;
     transition: all 0.3s ease 0s;
     &:hover {
+      text-decoration: none;
       transform: translateY(7px);
       color: rgb(247, 227, 47);
     }

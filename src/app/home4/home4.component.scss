@@ -2,20 +2,20 @@
   position: relative;
   z-index: 1;
   margin: auto;
-  height: 400px;
-  margin-bottom: 460px;
+  height: 300px;
+  margin-bottom: 510px;
   width: 100%;
   background-color: rgba(240, 193, 90, 0.72);
   h2 {
     width: 100%;
-    font-size: calc(1em + 1vw);
-    line-height: 1.1em;
+    font-size: calc(1.3em + 1vw);
+    line-height: 1.6em;
     letter-spacing: 0.1em;
     color: rgb(0, 0, 0);
     text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.37);
     font-weight: bold;
     position: absolute;
-    margin-top: 1em;
+    margin-top: 1.5em;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -24,13 +24,13 @@
   }
   p {
     width: 100%;
-    font-size: calc(0.6em + 1vw);
+    font-size: calc(0.7em + 1vw);
     font-weight: 400;
     line-height: 1.1em;
     letter-spacing: 0.1em;
     color: rgb(0, 0, 0);
     position: absolute;
-    margin-top: 5em;
+    margin-top: 7.3em;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -48,22 +48,22 @@
       width: 420px;
       border-radius: 12%;
       top: 16em;
-      left: 8em;
+      left: 4em;
     }
   }
   .column-1 {
     z-index: -1;
+    margin-top: 120px;
     .text-container {
       position: absolute;
       z-index: 99;
-      margin-top: 260px;
+      margin-top: 170px;
       height: 500px;
-      width: 500px;
-      background: #ececec;
-      box-shadow: 8px 10px 8px rgba(220, 233, 211, 0.72);
-      border-radius: 50px;
+      width: 550px;
+      background: none;
+      margin-left: 70px;
       h1 {
-        padding-top: 45px;
+        padding-top: 35px;
         position: absolute;
         width: 100%;
         left: 50%;
@@ -71,88 +71,32 @@
         text-align: center;
         font-style: normal;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 30px;
         line-height: 30px;
         color: #2b580c;
         text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.37);
       }
-
-      ul {
-        width: 75%;
-        position: absolute;
-        margin-left: 30px;
-        top: 150px;
-        text-align: center;
-        li {
-          list-style-position: initial;
-          padding: 15px;
-          color: black;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 22px;
-          line-height: 26px;
-        }
-      }
-
-      .input-container {
-        position: absolute;
-        z-index: 9999;
-        width: 600px;
-        margin-left: -150px;
-        margin-top: 410px;
-        outline: none;
-        box-shadow: 0px 2px 15px rgb(193 99 139 /12%);
-        .input-adress {
-          background: #fffffe;
-          border-radius: 40px;
-          border: 1px solid #2b580c;
-          box-shadow: 5px 3px 6px #2b580c;
-          height: 50px;
-          font-size: 18px;
-          line-height: 21px;
-          color: rgba(0, 0, 0, 0.340544);
-          width: 75%;
-          padding: 20px;
-          margin-right: 10px;
-          outline: none;
-
-          img {
-            position: relative;
-            color: rgba(43, 88, 12, 0.72);
-            top: 200px;
-            right: 500px;
-          }
-        }
-        .btn {
-          background: #fffffe;
-          border: 1px solid #2b580c;
-          box-shadow: 5px 3px 6px #2b580c;
-          border-radius: 40px;
-          text-transform: capitalize;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 23px;
-          color: #2b580c;
-          width: 20%;
-          padding: 10px 10px;
-          text-align: center;
-          &:hover {
-            background-color: #e1f813;
-          }
-        }
+      p {
+        margin-top: 90px;
+        padding-right: 55px;
+        padding-left: 55px;
+        text-align: justify;
+        -webkit-hyphens: auto;
+        hyphens: auto;
       }
     }
   }
 }
+
 .arrow-container {
   position: relative;
   display: block;
   text-align: center;
+  top: -40px;
   a {
     color: #2b580c;
     border: none;
-    background-color: white;
+    background-color: none;
     transition: all 0.3s ease 0s;
     &:hover {
       text-decoration: none;

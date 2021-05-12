@@ -16,10 +16,11 @@ import { Home3Component } from './home3/home3.component';
 import { BlogComponent } from './Blog/Blog.component';
 import { MainHomeComponent } from './mainHome/mainHome.component';
 import { Home4Component } from './home4/home4.component';
+import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios.component';
 
 
 @NgModule({
-  declarations: [					
+  declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
@@ -29,7 +30,8 @@ import { Home4Component } from './home4/home4.component';
       Home3Component,
       BlogComponent,
       MainHomeComponent,
-      Home4Component
+      Home4Component,
+      RegistroUsuariosComponent
    ],
   imports: [
     BrowserModule,
