@@ -1,0 +1,18 @@
+.container {
+  margin-top: 147px;
+  #firstImage {
+    width: 617px;
+    height: 411px;
+  }
+
+  .firstPost {
+    position: relative;
+    display: inline-block;
+  }
+
+  .card-title {
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+}
