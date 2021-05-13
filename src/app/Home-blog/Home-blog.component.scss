@@ -1,0 +1,37 @@
+.cards-container {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  height: 250px;
+  margin-top: 400px;
+  margin-bottom: 500px;
+  width: 100%;
+  background-color: rgba(134, 184, 107, 0.7);
+  h1 {
+    width: 100%;
+    font-size: calc(1.3em + 1vw);
+    line-height: 1.1em;
+    letter-spacing: 0.1em;
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.37);
+    font-weight: bold;
+    position: relative;
+    top: 1.5em;
+    bottom: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+  }
+  img {
+    &:hover {
+      cursor: pointer;
+      opacity: 50%;
+    }
+  }
+
+  .row {
+    margin-top: 100px;
+  }
+}
