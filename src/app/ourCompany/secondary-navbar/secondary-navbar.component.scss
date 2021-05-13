@@ -1,0 +1,99 @@
+.navbar {
+  .icon {
+    width: 127px;
+    height: 28px;
+  }
+}
+.nav-link {
+  font-family: Aleo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: black;
+}
+.logo {
+  width: 68px;
+  height: 67px;
+  opacity: 100%;
+}
+.dropbtn {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Aleo;
+  border: none;
+  background-size: 100%;
+  background: linear-gradient(90deg, #ffbc2c 21.27%, #91ff04 77.99%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 0.2px black;
+  color: transparent;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: rgb(221, 245, 182);
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  padding: 15px;
+
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-6 {
+  background-image: linear-gradient(to right, #009245, #fcee21, #d9e021);
+  box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}

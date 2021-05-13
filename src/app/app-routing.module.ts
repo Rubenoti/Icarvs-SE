@@ -1,3 +1,4 @@
+import { OurCompanyComponent } from './ourCompany/ourCompany.component';
 import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios.component';
 import { MainHomeComponent } from './mainHome/mainHome.component';
 import { BlogComponent } from './Blog/Blog.component';
@@ -8,6 +9,7 @@ const routes: Routes = [
   { path: '', component: MainHomeComponent, pathMatch: 'full' },
   { path: 'Blog', component: BlogComponent },
   { path: 'registro', component: RegistroUsuariosComponent },
+  { path: 'Conocenos', component: OurCompanyComponent },
 ];
 
 @NgModule({
