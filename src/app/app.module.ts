@@ -17,10 +17,11 @@ import { BlogComponent } from './Blog/Blog.component';
 import { MainHomeComponent } from './mainHome/mainHome.component';
 import { Home4Component } from './home4/home4.component';
 import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios.component';
+import { HomeBlogComponent } from './Home-blog/Home-blog.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     NavbarComponent,
@@ -31,7 +32,8 @@ import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios
       BlogComponent,
       MainHomeComponent,
       Home4Component,
-      RegistroUsuariosComponent
+      RegistroUsuariosComponent,
+      HomeBlogComponent
    ],
   imports: [
     BrowserModule,
