@@ -1,7 +1,7 @@
 <div id="wrapper">
   <h1>Icarvs</h1>
   <h2></h2>
-  <form>
+  <form [formGroup]="mForm">
     <input type="radio" id="login" name="action" value="login" checked>
     <input type="radio" id="register" name="action" value="register">
     <input type="radio" id="reset" name="action" value="reset">
@@ -14,7 +14,7 @@
             <input type="password" placeholder="repeat password">
             <input type="submit" value="reset password">
             <div>
-              <input type="submit" value="register">
+              <input type="submit" value="register" (ngSubmit)="registrar()" formControlName="email">
               <input type="submit" value="login">
             </div>
           </div>

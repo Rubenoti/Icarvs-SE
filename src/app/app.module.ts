@@ -22,6 +22,9 @@ import { Home4Component } from './home4/home4.component';
 import { RegistroUsuariosComponent } from './registro-usuarios/registro-usuarios.component';
 import { HomeBlogComponent } from './Home-blog/Home-blog.component';
 import { OurCompanyComponent } from './ourCompany/ourCompany.component';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -50,8 +53,10 @@ import { OurCompanyComponent } from './ourCompany/ourCompany.component';
     BrowserAnimationsModule,
     MatExpansionModule,
     MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
