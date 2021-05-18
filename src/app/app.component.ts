@@ -15,9 +15,8 @@ export class AppComponent {
         console.log(route.url);
 
         if (
-          route.url.includes('Conocenos') ||
-          route.url.includes('Sobre-nosotros') ||
-          route.url.includes('Energia-verde')
+          route.url.includes('OurCompany') ||
+          route.url.includes('registro')
         ) {
           this.hideMenu = true;
         } else {
