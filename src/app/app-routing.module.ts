@@ -1,3 +1,4 @@
+import { ClientOptionsComponent } from './client-options/client-options.component';
 import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { GreenEnergyComponent } from './ourCompany/green-energy/green-energy.component';
 import { AboutUsComponent } from './ourCompany/about-us/about-us.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
     ],
   },
   { path: 'Panel', component: DashboardComponent },
+  { path: 'Opciones', component: ClientOptionsComponent },
 ];
 
 @NgModule({

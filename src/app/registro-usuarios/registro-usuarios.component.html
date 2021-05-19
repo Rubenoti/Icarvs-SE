@@ -7,8 +7,10 @@
     <input type="radio" id="reset" name="action" value="reset">
     <div id="inputs">
       <div>
-        <input type="text" placeholder="email" autofocus formControlName="email">
+        <input type="text" placeholder="email" autofocus formControlName="email"
+          [ngClass]="{'is-invalid': f.email.errors && isSent}">
         <div>
+
           <input type="password" placeholder="password" formControlName="pass">
           <div>
             <input type="password" placeholder="repeat password" formControlName="confirmPass">
