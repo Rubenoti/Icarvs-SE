@@ -25,9 +25,10 @@ import { OurCompanyComponent } from './ourCompany/ourCompany.component';
 import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './Dashboard/Dashboard.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     NavbarComponent,
@@ -44,7 +45,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     GreenEnergyComponent,
     SecondaryNavbarComponent,
     OurPoliticComponent,
-  ],
+      DashboardComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

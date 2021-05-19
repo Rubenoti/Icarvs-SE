@@ -1,6 +1,8 @@
+import { NoPreloading, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { confirmedValidator } from '../registro-usuarios/validators';
+
 @Component({
   selector: 'app-registro-usuarios',
   templateUrl: './registro-usuarios.component.html',
@@ -9,7 +11,7 @@ import { confirmedValidator } from '../registro-usuarios/validators';
 export class RegistroUsuariosComponent implements OnInit {
   mForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private router: Router) {
     this.mForm = this.fb.group(
       {
         email: [
@@ -45,12 +47,42 @@ export class RegistroUsuariosComponent implements OnInit {
   }
   registrar() {
     console.log('Enviar formulario', this.f);
+    console.log(this.f.email.value);
 
+    if (!this.f.email.errors) {
+      console.log('No hay errores en el email');
+    }
+    if (!this.f.pass.errors) {
+      console.log('No hay errores en el pass');
+    }
+    if (!this.f.confirmPass.errors) {
+      console.log('No hay errores en el confirmPass');
+    }
+    if (this.f.email.value && this.f.pass.value && this.f.confirmPass.value) {
+      this.navigateToDashboard;
+      console.log('Registro realizado');
+    } else if (this.f.email.value && this.f.pass.value) {
+      this.navigateToRegister;
+      console.log('Login realizado');
+    } else if (this.f.email.value) {
+      this.resetPass;
+      console.log('Reinicio realizado');
+    }
     if (this.mForm.invalid) {
       console.log('Error en el formulario');
       return;
     }
   }
+  // si se cumple el primer if te lleva a la dashboard //
+  navigateToDashboard() {
+    this.router.navigate(['/Panel']);
+  }
+  // si se cumple el segundo if te lleva a los formularios de eleccion //
+  navigateToRegister() {
+    this.router.navigate(['/Opciones']);
+  }
+  // si se cumple el tercer if actualiza la base de datos//
+  resetPass() {}
 
   ngOnInit() {}
 }

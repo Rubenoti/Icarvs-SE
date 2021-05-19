@@ -1,3 +1,4 @@
+import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { GreenEnergyComponent } from './ourCompany/green-energy/green-energy.component';
 import { AboutUsComponent } from './ourCompany/about-us/about-us.component';
 import { OurCompanyComponent } from './ourCompany/ourCompany.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: 'Energia-verde', component: GreenEnergyComponent },
     ],
   },
+  { path: 'Panel', component: DashboardComponent },
 ];
 
 @NgModule({
