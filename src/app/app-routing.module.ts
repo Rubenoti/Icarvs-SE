@@ -1,3 +1,8 @@
+import { DireccionComponent } from './opciones-usuarios/direccion/direccion.component';
+import { TiempoComponent } from './opciones-usuarios/tiempo/tiempo.component';
+import { HayElectricidadComponent } from './opciones-usuarios/hay-electricidad/hay-electricidad.component';
+import { DondeComponent } from './opciones-usuarios/Donde/Donde.component';
+import { OpcionesUsuariosComponent } from './opciones-usuarios/opciones-usuarios.component';
 import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { GreenEnergyComponent } from './ourCompany/green-energy/green-energy.component';
 import { AboutUsComponent } from './ourCompany/about-us/about-us.component';
@@ -23,6 +28,17 @@ const routes: Routes = [
     ],
   },
   { path: 'Panel', component: DashboardComponent },
+  {
+    path: 'Opciones',
+    component: OpcionesUsuariosComponent,
+    children: [
+      { path: '', redirectTo: 'Donde', pathMatch: 'full' },
+      { path: 'Donde', component: DondeComponent },
+      { path: 'Hay-electricidad', component: HayElectricidadComponent },
+      { path: 'Tiempo', component: TiempoComponent },
+      { path: 'Direccion', component: DireccionComponent },
+    ],
+  },
 ];
 
 @NgModule({
