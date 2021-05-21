@@ -27,9 +27,10 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { ClientOptionsComponent } from './client-options/client-options.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
@@ -46,9 +47,9 @@ import { ClientOptionsComponent } from './client-options/client-options.componen
     GreenEnergyComponent,
     SecondaryNavbarComponent,
     OurPoliticComponent,
-      DashboardComponent,
-      ClientOptionsComponent
-   ],
+    DashboardComponent,
+    ClientOptionsComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -59,6 +60,7 @@ import { ClientOptionsComponent } from './client-options/client-options.componen
     MatGridListModule,
     FormsModule,
     ReactiveFormsModule,
+    FontAwesomeModule,
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' }],
   bootstrap: [AppComponent],
