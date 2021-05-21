@@ -13,9 +13,17 @@
           <li class="nav-item px-3">
             <a class="nav-link" href="#">Inicio</a>
           </li>
-          <li class="nav-item px-3">
-            <a class="nav-link" [routerLink]="['/OurCompany']" routerLinkActive="router-link-active"
-              href="#">Conócenos</a>
+          <li class="nav-item dropdown ">
+            <button class="dropbtn px-3">Conócenos</button>
+            <div class="dropdown-content">
+              <a class="nav-link" [routerLink]="['/Nuestra-politica']" routerLinkActive="router-link-active"
+                href="#">Nuestra
+                política</a>
+              <a class="nav-link" [routerLink]="['/Energia-verde']" routerLinkActive="router-link-active"
+                href="#">Energia verde</a>
+              <a class="nav-link" [routerLink]="['/Conocenos']" routerLinkActive="router-link-active" href="#">Sobre
+                nosotros</a>
+            </div>
           </li>
           <li class="nav-item dropdown ">
             <button class="dropbtn px-3">Nuestros Servicios</button>

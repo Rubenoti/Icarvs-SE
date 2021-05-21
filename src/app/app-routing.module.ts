@@ -1,3 +1,4 @@
+import { OurPoliticComponent } from './ourCompany/our-politic/our-politic.component';
 import { DireccionComponent } from './opciones-usuarios/direccion/direccion.component';
 import { TiempoComponent } from './opciones-usuarios/tiempo/tiempo.component';
 import { HayElectricidadComponent } from './opciones-usuarios/hay-electricidad/hay-electricidad.component';
@@ -17,16 +18,9 @@ const routes: Routes = [
   { path: '', component: MainHomeComponent, pathMatch: 'full' },
   { path: 'Blog', component: BlogComponent },
   { path: 'registro', component: RegistroUsuariosComponent },
-  {
-    path: 'OurCompany',
-    component: OurCompanyComponent,
-    children: [
-      { path: '', redirectTo: 'Conocenos', pathMatch: 'full' },
-      { path: 'Conocenos', component: AboutUsComponent },
-      { path: 'Sobre-nosotros', component: AboutUsComponent },
-      { path: 'Energia-verde', component: GreenEnergyComponent },
-    ],
-  },
+  { path: 'Conocenos', component: AboutUsComponent },
+  { path: 'Nuestra-politica', component: OurPoliticComponent },
+  { path: 'Energia-verde', component: GreenEnergyComponent },
   { path: 'Panel', component: DashboardComponent },
   {
     path: 'Opciones',
