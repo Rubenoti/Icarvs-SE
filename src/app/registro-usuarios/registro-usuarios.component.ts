@@ -1,4 +1,4 @@
-import { NoPreloading, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { confirmedValidator } from '../registro-usuarios/validators';
