@@ -1,0 +1,73 @@
+.container-fluid {
+  .firstImg {
+    position: relative;
+    height: 55em;
+    width: fit-content;
+    filter: blur(3px);
+  }
+  .imgText {
+    h1 {
+      position: absolute;
+      text-align: center;
+      top: 21vw;
+      left: 30vw;
+      background-size: 100%;
+      background: radial-gradient(
+        52.65% 471.85% at 50.09% 62.12%,
+        #c7fd90 0%,
+        #8ad73b 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      font-family: "Pattaya", sans-serif;
+      font-size: 3.5vw;
+    }
+  }
+  .text-center {
+    padding: 3em;
+    h1 {
+      font-family: roboto;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+.bottom {
+  .secondImg {
+    position: relative;
+    object-fit: none;
+    height: 12em;
+    width: fit-content;
+    filter: blur(1.8px);
+  }
+  .colorText {
+    h1 {
+      position: absolute;
+      font-family: "Pattaya", sans-serif;
+      top: 90vw;
+      left: 8vw;
+      font-size: 4em;
+      background-size: 100%;
+      background: linear-gradient(
+        90.25deg,
+        #ceb3c1 7.87%,
+        #c0769e 21.6%,
+        #7d6c72 56.07%,
+        #85a430 56.56%,
+        #56ee65 73.55%,
+        #cbc4c7 82.09%,
+        #f4180a 98.65%
+      );
+
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  }
+}
