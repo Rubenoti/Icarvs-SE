@@ -11,7 +11,7 @@
         src="../../../assets/logo2.png"
         alt="icarvs"
         width="80"
-        height="30"
+        height="25"
       />
     </a>
   </div>
@@ -30,15 +30,8 @@
           />
         </div>
         <div class="col-6 column2">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a
-                class="nav-link"
-                [routerLink]="['Hay-electricidad']"
-                routerLinkActive="active"
-                >Vivienda unifamiliar</a
-              >
-            </li>
+          <ul class="list-group" (click)="donde()">
+            <li class="list-group-item">Vivienda unifamiliar</li>
             <li class="list-group-item">Comunidad de vecinos</li>
             <li class="list-group-item">Piso</li>
             <li class="list-group-item">Empresa/negocio</li>
@@ -49,5 +42,7 @@
   </div>
 </div>
 <div class="container turn-back justify-content-center">
-  <h1>Volver atrás</h1>
+  <a class="link" [routerLink]="['/']" routerLinkActive="router-link-active"
+    >Volver atrás</a
+  >
 </div>
