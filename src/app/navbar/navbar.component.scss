@@ -14,7 +14,15 @@
   line-height: 15px;
   letter-spacing: 0.1em;
   color: black;
+  &:hover {
+    color: black;
+  }
+  &.active {
+    font-weight: 600;
+    color: black;
+  }
 }
+
 .logo {
   width: 68px;
   height: 67px;

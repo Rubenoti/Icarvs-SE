@@ -1,31 +1,50 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
-    <img class="logo" src="../../assets/icarvsIcon.jfif" alt="" loading="lazy" />
+    <img
+      class="logo"
+      src="../../assets/icarvsIcon-transparent.png"
+      alt=""
+      loading="lazy"
+    />
     <img class="icon" src="../../assets/logo2.png" alt="" loading="lazy" />
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" (click)="centered.toggle()" aria-controls="navbarCenteredExample"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="centered.toggle()"
+        aria-controls="navbarCenteredExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCenteredExample" mdbCollapse
-        #centered="mdbCollapse">
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarCenteredExample"
+        mdbCollapse
+        #centered="mdbCollapse"
+      >
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item px-3">
-            <a class="nav-link" href="#">Inicio</a>
+            <a
+              class="nav-link"
+              [routerLink]="['/']"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              href="#"
+              >Inicio</a
+            >
           </li>
-          <li class="nav-item dropdown ">
-            <button class="dropbtn px-3">Conócenos</button>
-            <div class="dropdown-content">
-              <a class="nav-link" [routerLink]="['/Nuestra-politica']" routerLinkActive="router-link-active"
-                href="#">Nuestra
-                política</a>
-              <a class="nav-link" [routerLink]="['/Energia-verde']" routerLinkActive="router-link-active"
-                href="#">Energia verde</a>
-              <a class="nav-link" [routerLink]="['/Conocenos']" routerLinkActive="router-link-active" href="#">Sobre
-                nosotros</a>
-            </div>
+          <li class="nav-item px-3">
+            <a
+              class="nav-link"
+              [routerLink]="['/OurCompany']"
+              routerLinkActive="active"
+              href="#"
+              >Conócenos</a
+            >
           </li>
-          <li class="nav-item dropdown ">
+          <li class="nav-item dropdown">
             <button class="dropbtn px-3">Nuestros Servicios</button>
             <div class="dropdown-content">
               <a href="#">Simulador</a>
@@ -33,12 +52,23 @@
             </div>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link" [routerLink]="['/Blog']" routerLinkActive="router-link-active" href="#">Blog</a>
+            <a
+              class="nav-link"
+              [routerLink]="['/Blog']"
+              routerLinkActive="active"
+              href="#"
+              >Blog</a
+            >
           </li>
         </ul>
         <div class="btncontainer">
-          <button class="btn-hover color-6" [routerLink]="['/registro']" routerLinkActive="router-link-active">ZONA
-            CLIENTES</button>
+          <button
+            class="btn-hover color-6"
+            [routerLink]="['/registro']"
+            routerLinkActive="active"
+          >
+            ZONA CLIENTES
+          </button>
         </div>
       </div>
     </div>
