@@ -1,12 +1,53 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="#">
+      <img
+        src="../../../assets/icarvsIcon-transparent.png"
+        alt="icarvs"
+        width="40"
+        height="40"
+      />
+      <img
+        src="../../../assets/logo2.png"
+        alt="icarvs"
+        width="80"
+        height="30"
+      />
+    </a>
+  </div>
+</nav>
 <div class="container">
-  <div class="row customrow align-items-center">
-    <div class="col-12 d-grid">
-      <div class="row justify-content-center">
-        <div class="container general-container">
-          <button type="button" class="btn btn-primary">Primary</button>
-          <div class="container info-container"></div>
+  <div class="container general-container">
+    <h1>Antes de comenzar necesitamos saber más sobre usted</h1>
+    <p>¿Dónde desea instalar las placas solares?</p>
+    <div class="container info-container">
+      <div class="row">
+        <div class="col-6 column1">
+          <img
+            src="../../../assets/opciones-usuarios/Cityscapes - Downtown.png"
+            class="d-block"
+            alt="ciudad"
+          />
+        </div>
+        <div class="col-6 column2">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a
+                class="nav-link"
+                [routerLink]="['Hay-electricidad']"
+                routerLinkActive="active"
+                >Vivienda unifamiliar</a
+              >
+            </li>
+            <li class="list-group-item">Comunidad de vecinos</li>
+            <li class="list-group-item">Piso</li>
+            <li class="list-group-item">Empresa/negocio</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="container turn-back justify-content-center">
+  <h1>Volver atrás</h1>
 </div>

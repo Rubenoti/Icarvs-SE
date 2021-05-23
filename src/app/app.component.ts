@@ -16,7 +16,8 @@ export class AppComponent {
 
         if (
           route.url.includes('OurCompany') ||
-          route.url.includes('registro')
+          route.url.includes('registro') ||
+          route.url.includes('Opciones')
         ) {
           this.hideMenu = true;
         } else {
