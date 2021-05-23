@@ -1,6 +1,5 @@
 import { DondeComponent } from './opciones-usuarios/Donde/Donde.component';
 import { OurPoliticComponent } from './ourCompany/our-politic/our-politic.component';
-import { SecondaryNavbarComponent } from './ourCompany/secondary-navbar/secondary-navbar.component';
 import { GreenEnergyComponent } from './ourCompany/green-energy/green-energy.component';
 import { AboutUsComponent } from './ourCompany/about-us/about-us.component';
 import { NgModule } from '@angular/core';
@@ -45,7 +44,6 @@ import { OpcionesUsuariosComponent } from './opciones-usuarios/opciones-usuarios
     OurCompanyComponent,
     AboutUsComponent,
     GreenEnergyComponent,
-    SecondaryNavbarComponent,
     OurPoliticComponent,
     DashboardComponent,
     OpcionesUsuariosComponent,
