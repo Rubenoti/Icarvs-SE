@@ -1,3 +1,55 @@
-<p>
-  direccion works!
-</p>
+<nav class="navbar navbar-light bg-light">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="#">
+      <img
+        src="../../../assets/icarvsIcon-transparent.png"
+        alt="icarvs"
+        width="40"
+        height="40"
+      />
+      <img
+        src="../../../assets/logo2.png"
+        alt="icarvs"
+        width="80"
+        height="25"
+      />
+    </a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="container general-container">
+    <div class="container switch-container w-100 justify-content-end mt-4">
+      <input id="checkbox" type="checkbox" class="checkbox" />
+      <label for="checkbox" class="switch">
+        <span class="switch__circle">
+          <span class="switch__circle-inner"></span>
+        </span>
+        <span class="switch__left">Dirección</span>
+        <span class="switch__right">CUPS</span>
+      </label>
+    </div>
+    <p>Indíquenos su dirección</p>
+    <div class="container info-container">
+      <div class="row">
+        <div class="col-6 column1">
+          <!-- <img
+            src="../../../assets/opciones-usuarios/Open Doodles - Reading.png"
+            class="d-block"
+            alt="home"
+          /> -->
+        </div>
+        <div class="col-6 column2">
+          <ul class="list-group">
+            <li class="list-group-item">Comprobar dirección</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container turn-back justify-content-center">
+  <a class="link" (click)="tiempo()" routerLinkActive="router-link-active"
+    >Volver atrás</a
+  >
+</div>
