@@ -116,12 +116,13 @@
       height: 420px;
 
       .list-group {
+        display: block;
         background: transparent;
         position: absolute;
-        text-align: center;
-        width: 60%;
-        bottom: 10px;
-        right: 60px;
+        left: 50%;
+        top: 40%;
+        transform: translate3d(-50%, -50%, 0);
+        width: fit-content;
         height: 18vw;
         .list-group-item {
           background-color: floralwhite;

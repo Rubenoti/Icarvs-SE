@@ -31,23 +31,85 @@
     </div>
     <p>Indíquenos su dirección</p>
     <div class="container info-container">
+      <div class="row mb-0">
+        <div class="col-5 column-1 mt-5">
+          <div class="form-floating mb-3">
+            <input
+              type="city"
+              class="form-control"
+              id="floatingInput"
+              placeholder="City"
+            />
+            <label for="floatingInput">Localidad</label>
+          </div>
+        </div>
+        <div class="col-5 column-1 mt-5">
+          <div class="form-floating">
+            <input
+              type="province"
+              class="form-control"
+              id="floatingProvince"
+              placeholder="Province"
+            />
+            <label for="floatingStreet">Provincia</label>
+          </div>
+        </div>
+        <div class="col-2 column-1 mt-5">
+          <div class="form-floating">
+            <input
+              type="CP"
+              class="form-control"
+              id="floatingCP"
+              placeholder="CP"
+            />
+            <label for="floatingCP">C.P.</label>
+          </div>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-6 column1">
-          <!-- <img
-            src="../../../assets/opciones-usuarios/Open Doodles - Reading.png"
-            class="d-block"
-            alt="home"
-          /> -->
+        <div class="col-6 column-1">
+          <div class="form-floating mb-3">
+            <input
+              type="street"
+              class="form-control"
+              id="floatingInput"
+              placeholder="Street"
+            />
+            <label for="floatingInput">Calle</label>
+          </div>
         </div>
-        <div class="col-6 column2">
-          <ul class="list-group">
-            <li class="list-group-item">Comprobar dirección</li>
-          </ul>
+        <div class="col-1 column-1">
+          <div class="form-floating">
+            <input
+              type="num"
+              class="form-control"
+              id="floatingNum"
+              placeholder="Num"
+            />
+            <label for="floatingStreet">Nº</label>
+          </div>
         </div>
+        <div class="col-5 column-1">
+          <div class="form-floating">
+            <input
+              type="door"
+              class="form-control"
+              id="floatingDoor"
+              placeholder="Door"
+            />
+            <label for="floatingCP">Portal/Piso/Puerta</label>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 column2">
+        <ul class="list-group">
+          <li class="list-group-item">Comprobar dirección</li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
+
 <div class="container turn-back justify-content-center">
   <a class="link" (click)="tiempo()" routerLinkActive="router-link-active"
     >Volver atrás</a
