@@ -14,7 +14,6 @@
             <a class="nav-link" [routerLink]="['/']" routerLinkActive="active"
               [routerLinkActiveOptions]="{ exact: true }" href="#">Inicio</a>
           </li>
-          <li class="nav-item px-3">
           <li class="nav-item dropdown ">
             <button class="dropbtn px-3">Conócenos</button>
             <div class="dropdown-content">
@@ -22,17 +21,18 @@
                 href="#">Nuestra
                 política</a>
               <a class="nav-link" [routerLink]="['/Energia-verde']" routerLinkActive="router-link-active"
-                href="#">Energia verde</a>
+                href="#">Energía verde</a>
               <a class="nav-link" [routerLink]="['/Conocenos']" routerLinkActive="router-link-active" href="#">Sobre
                 nosotros</a>
             </div>
-
           </li>
           <li class="nav-item dropdown">
             <button class="dropbtn px-3">Nuestros Servicios</button>
             <div class="dropdown-content">
-              <a href="#">Simulador</a>
-              <a href="#">Comparador</a>
+              <a class="nav-link" [routerLink]="['/Simulador']" routerLinkActive="router-link-active"
+                href="#">Simulador</a>
+              <a class="nav-link" [routerLink]="['/Comparador']" routerLinkActive="router-link-active"
+                href="#">Comparador</a>
             </div>
           </li>
           <li class="nav-item px-3">

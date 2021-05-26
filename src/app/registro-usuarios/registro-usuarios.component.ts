@@ -11,6 +11,9 @@ import { confirmedValidator } from '../registro-usuarios/validators';
 export class RegistroUsuariosComponent implements OnInit {
   mForm: FormGroup;
   isSent = false;
+  showLogin = true;
+  showRegister = false;
+  showReset = false;
 
   constructor(private fb: FormBuilder, private router: Router) {
     this.mForm = this.fb.group(
@@ -51,22 +54,18 @@ export class RegistroUsuariosComponent implements OnInit {
     this.isSent = true;
     console.log(this.f.email.value);
 
-    if (!this.f.email.errors) {
-      console.log('No hay errores en el email');
-    } else console.log('Hay error en el email');
-    if (!this.f.pass.errors) {
-      console.log('No hay errores en el pass');
-    } else console.log('Hay error en la pass');
-    if (!this.f.confirmPass.errors) {
-      console.log('No hay errores en el confirmPass');
-    } else console.log('Hay error en el confirmPass');
-    if (this.f.email.value && this.f.pass.value && this.f.confirmPass.value) {
+    if (
+      this.showRegister &&
+      !this.f.email.errors &&
+      !this.f.pass.errors &&
+      !this.f.confirmPass.errors
+    ) {
       this.navigateToRegister();
       console.log('Registro realizado');
-    } else if (this.f.email.value && this.f.pass.value) {
+    } else if (this.showLogin && !this.f.email.errors && !this.f.pass.errors) {
       this.navigateToDashboard();
       console.log('Login realizado');
-    } else if (this.f.email.value) {
+    } else if (this.showReset && !this.f.email.errors) {
       this.resetPass();
       console.log('Reinicio realizado');
     }
@@ -75,16 +74,37 @@ export class RegistroUsuariosComponent implements OnInit {
       return;
     }
   }
-  // si se cumple el primer if te lleva a la dashboard //
+
   navigateToDashboard() {
     this.router.navigate(['/Panel']);
   }
-  // si se cumple el segundo if te lleva a los formularios de eleccion //
+
   navigateToRegister() {
     this.router.navigate(['/Opciones']);
   }
-  // si se cumple el tercer if actualiza la base de datos//
+
   resetPass() {}
+
+  mostrarLogin() {
+    this.showLogin = true;
+    this.showRegister = false;
+    this.showReset = false;
+    console.log('Estás en login');
+  }
+
+  mostrarReset() {
+    this.showLogin = false;
+    this.showRegister = false;
+    this.showReset = true;
+    console.log('Estás en reset');
+  }
+
+  mostrarRegister() {
+    this.showLogin = false;
+    this.showRegister = true;
+    this.showReset = false;
+    console.log('Estás en register');
+  }
 
   ngOnInit() {}
 }
