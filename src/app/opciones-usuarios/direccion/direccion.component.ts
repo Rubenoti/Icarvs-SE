@@ -11,7 +11,7 @@ export class DireccionComponent implements OnInit {
 
   ngOnInit() {}
 
-  tiempo() {
+  hayElectricidad() {
     this.router.navigate(['/Opciones/Tiempo']);
   }
 }

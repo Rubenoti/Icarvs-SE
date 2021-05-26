@@ -13,13 +13,12 @@
     <input type="radio" id="reset" name="action" value="reset">
     <div id="inputs">
       <div>
-        <input type="text" placeholder="email" autofocus formControlName="email"
-          [ngClass]="{'is-invalid': f.email.errors && isSent}">
+        <input type="text" placeholder="email" autofocus formControlName="email">
         <div>
 
-          <input type="password" placeholder="password" formControlName="pass">
+          <input type="password" placeholder="contraseña" formControlName="pass">
           <div>
-            <input type="password" placeholder="repeat password" formControlName="confirmPass">
+            <input type="password" placeholder="Repite contraseña" formControlName="confirmPass">
             <input type="submit" value="reset password">
             <div>
               <input type="submit" value="register">
@@ -30,10 +29,10 @@
       </div>
     </div>
     <div id="labels">
-      <label for="login">Ya estas registrado?<span> Login </span></label>
-      <label for="reset">Recuperar contraseña<span> Reset </span></label>
-      <label for="login"><span> Atras </span></label>
-      <label for="register"> No estás registrado? <span> Crea una cuenta!</span></label>
+      <label (click)="mostrarLogin()" for="login">¿Ya estas registrado?<span> Login </span></label>
+      <label (click)="mostrarReset()" for="reset">Recuperar contraseña<span> Reset </span></label>
+      <label (click)="mostrarLogin()" for="login"><span> Atras </span></label>
+      <label (click)="mostrarRegister()" for="register"> No estás registrado? <span> Crea una cuenta!</span></label>
     </div>
   </form>
 </div>
