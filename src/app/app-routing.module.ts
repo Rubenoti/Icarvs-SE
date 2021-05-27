@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 import { OurPoliticComponent } from './ourCompany/our-politic/our-politic.component';
 import { DireccionComponent } from './opciones-usuarios/direccion/direccion.component';
 import { TiempoComponent } from './opciones-usuarios/tiempo/tiempo.component';
@@ -16,6 +17,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: MainHomeComponent, pathMatch: 'full' },
+  { path: 'Inicio', component: HomeComponent },
   { path: 'Blog', component: BlogComponent },
   { path: 'registro', component: RegistroUsuariosComponent },
   { path: 'Conocenos', component: AboutUsComponent },
