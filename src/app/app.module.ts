@@ -27,7 +27,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { OpcionesUsuariosComponent } from './opciones-usuarios/opciones-usuarios.component';
-
+import { NotifierModule } from 'angular-notifier';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,6 +59,10 @@ import { OpcionesUsuariosComponent } from './opciones-usuarios/opciones-usuarios
     MatGridListModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    NotifierModule.withConfig({
+      // Custom options in here
+    }),
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' }],
   bootstrap: [AppComponent],

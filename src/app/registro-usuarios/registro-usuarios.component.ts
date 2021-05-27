@@ -2,6 +2,7 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { confirmedValidator } from '../registro-usuarios/validators';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-registro-usuarios',
@@ -14,8 +15,13 @@ export class RegistroUsuariosComponent implements OnInit {
   showLogin = true;
   showRegister = false;
   showReset = false;
+  loginSumbit = false;
 
-  constructor(private fb: FormBuilder, private router: Router) {
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private notifierService: NotifierService
+  ) {
     this.mForm = this.fb.group(
       {
         email: [
@@ -53,25 +59,38 @@ export class RegistroUsuariosComponent implements OnInit {
     console.log('Enviar formulario', this.f);
     this.isSent = true;
     console.log(this.f.email.value);
-
-    if (
-      this.showRegister &&
-      !this.f.email.errors &&
-      !this.f.pass.errors &&
-      !this.f.confirmPass.errors
-    ) {
-      this.navigateToRegister();
-      console.log('Registro realizado');
-    } else if (this.showLogin && !this.f.email.errors && !this.f.pass.errors) {
-      this.navigateToDashboard();
-      console.log('Login realizado');
-    } else if (this.showReset && !this.f.email.errors) {
-      this.resetPass();
-      console.log('Reinicio realizado');
+    if (this.showRegister) {
+      if (
+        !this.f.email.errors &&
+        !this.f.pass.errors &&
+        !this.f.confirmPass.errors
+      ) {
+        this.navigateToRegister();
+      } else {
+        this.notifierService.notify(
+          'error',
+          'Comprueba que todos tus datos son correctos'
+        );
+      }
     }
-    if (this.mForm.invalid) {
-      console.log('Error en el formulario');
-      return;
+
+    if (this.showLogin) {
+      if (!this.f.email.errors && !this.f.pass.errors) {
+        this.navigateToDashboard();
+      } else {
+        this.notifierService.notify(
+          'error',
+          'Email o contraseña son incorrectos'
+        );
+      }
+    }
+
+    if (this.showReset) {
+      if (!this.f.email.errors) {
+        this.resetPass();
+      } else {
+        this.notifierService.notify('error', 'Email incorrecto');
+      }
     }
   }
 
