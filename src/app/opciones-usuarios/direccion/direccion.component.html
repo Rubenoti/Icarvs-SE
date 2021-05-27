@@ -1,8 +1,18 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container justify-content-center">
     <a class="navbar-brand" href="#">
-      <img src="../../../assets/icarvsIcon-transparent.png" alt="icarvs" width="40" height="40" />
-      <img src="../../../assets/logo2.png" alt="icarvs" width="80" height="25" />
+      <img
+        src="../../../assets/icarvsIcon-transparent.png"
+        alt="icarvs"
+        width="40"
+        height="40"
+      />
+      <img
+        src="../../../assets/logo2.png"
+        alt="icarvs"
+        width="80"
+        height="25"
+      />
     </a>
   </div>
 </nav>
@@ -10,7 +20,12 @@
 <div class="container">
   <div class="container general-container">
     <div class="container switch-container w-100 justify-content-end mt-4">
-      <input id="checkbox" type="checkbox" class="checkbox" />
+      <input
+        id="checkbox"
+        type="checkbox"
+        class="checkbox"
+        (change)="changeCheckbox($event)"
+      />
       <label for="checkbox" class="switch">
         <span class="switch__circle">
           <span class="switch__circle-inner"></span>
@@ -19,88 +34,91 @@
         <span class="switch__right">CUPS</span>
       </label>
     </div>
-    <p>Indíquenos su dirección</p>
-    <div class="container info-container">
-      <div class="row mb-0">
-        <div class="col-5 column-1 mt-5">
-          <div class="form-floating mb-3">
-            <input
-              type="city"
-              class="form-control"
-              id="floatingInput"
-              placeholder="City"
-            />
-            <label for="floatingInput">Localidad</label>
+    <ng-container *ngIf="!showCups">
+      <p>Indíquenos su dirección</p>
+      <div class="info-container">
+        <div class="row mb-0">
+          <div class="col-5 column-1 mt-5">
+            <div class="form-floating mb-3">
+              <input
+                type="city"
+                class="form-control"
+                id="floatingInput"
+                placeholder="City"
+              />
+              <label for="floatingInput">Localidad</label>
+            </div>
+          </div>
+          <div class="col-5 column-1 mt-5">
+            <div class="form-floating">
+              <input
+                type="province "
+                class="form-control"
+                id="fotingProvince "
+                placeholder="Province "
+              />
+              <label for="floatingStreet ">Provincia</label>
+            </div>
+          </div>
+          <div class="col-2 column-1 mt-5">
+            <div class="form-floating">
+              <input
+                type="CP "
+                class="form-control"
+                id="floatingCP "
+                placeholder="CP "
+              />
+              <label for="floatingCP ">C.P.</label>
+            </div>
           </div>
         </div>
-        <div class="col-5 column-1 mt-5">
-          <div class="form-floating">
-            <input
-              type="province"
-              class="form-control"
-              id="floatingProvince"
-              placeholder="Province"
-            />
-            <label for="floatingStreet">Provincia</label>
+        <div class="row">
+          <div class="col-6 column-1">
+            <div class="form-floating mb-3">
+              <input
+                type="street "
+                class="form-control"
+                id="floatingInput "
+                placeholder="Street "
+              />
+              <label for="floatingInput ">Calle</label>
+            </div>
+          </div>
+          <div class="col-2 column-1">
+            <div class="form-floating">
+              <input
+                type="num"
+                class="form-control"
+                id="floatingNum "
+                placeholder="Num "
+              />
+              <label for="floatingStreet">Nº</label>
+            </div>
+          </div>
+          <div class="col-4 column-1">
+            <div class="form-floating">
+              <input
+                type="door"
+                class="form-control"
+                id="floatingDoor"
+                placeholder="Door "
+              />
+              <label for="floatingCP ">Portal/Piso/Puerta</label>
+            </div>
           </div>
         </div>
-        <div class="col-2 column-1 mt-5">
-          <div class="form-floating">
-            <input
-              type="CP"
-              class="form-control"
-              id="floatingCP"
-              placeholder="CP"
-            />
-            <label for="floatingCP">C.P.</label>
-          </div>
+        <div class="col-6 column2">
+          <button type="button" class="button-adress">
+            Comprobar dirección
+          </button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6 column-1">
-          <div class="form-floating mb-3">
-            <input
-              type="street"
-              class="form-control"
-              id="floatingInput"
-              placeholder="Street"
-            />
-            <label for="floatingInput">Calle</label>
-          </div>
-        </div>
-        <div class="col-1 column-1">
-          <div class="form-floating">
-            <input
-              type="num"
-              class="form-control"
-              id="floatingNum"
-              placeholder="Num"
-            />
-            <label for="floatingStreet">Nº</label>
-          </div>
-        </div>
-        <div class="col-5 column-1">
-          <div class="form-floating">
-            <input
-              type="door"
-              class="form-control"
-              id="floatingDoor"
-              placeholder="Door"
-            />
-            <label for="floatingCP">Portal/Piso/Puerta</label>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 column2">
-        <ul class="list-group">
-          <li class="list-group-item">Comprobar dirección</li>
-        </ul>
-      </div>
-    </div>
+    </ng-container>
+
+    <ng-container *ngIf="showCups"> Aqui va lo del CUPS </ng-container>
   </div>
 </div>
 
 <div class="container turn-back justify-content-center">
-  <a class="link" (click)=hayElectricidad() routerLinkActive="router-link-active">Volver
-    atrás</a>
+  <button class="link" (click)="hayElectricidad()">Volver atrás</button>
 </div>

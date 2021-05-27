@@ -7,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./direccion.component.scss'],
 })
 export class DireccionComponent implements OnInit {
+  showCups = false;
+
   constructor(private router: Router) {}
 
   ngOnInit() {}
 
   hayElectricidad() {
     this.router.navigate(['/Opciones/Tiempo']);
+  }
+
+  changeCheckbox(evento: any) {
+    this.showCups = evento.target.checked;
   }
 }

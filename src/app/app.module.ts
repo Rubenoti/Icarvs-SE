@@ -1,3 +1,4 @@
+import { DireccionComponent } from './opciones-usuarios/direccion/direccion.component';
 import { DondeComponent } from './opciones-usuarios/Donde/Donde.component';
 import { OurPoliticComponent } from './ourCompany/our-politic/our-politic.component';
 import { GreenEnergyComponent } from './ourCompany/green-energy/green-energy.component';
@@ -48,6 +49,7 @@ import { NotifierModule } from 'angular-notifier';
     DashboardComponent,
     OpcionesUsuariosComponent,
     DondeComponent,
+    DireccionComponent,
   ],
   imports: [
     BrowserModule,
