@@ -68,7 +68,7 @@ export class RegistroUsuariosComponent implements OnInit {
         !this.f.pass.errors &&
         !this.f.confirmPass.errors
       ) {
-        this.navigateToRegister();
+        this.registroUser();
       } else {
         this.notifierService.notify(
           'error',
@@ -79,7 +79,7 @@ export class RegistroUsuariosComponent implements OnInit {
 
     if (this.showLogin) {
       if (!this.f.email.errors && !this.f.pass.errors) {
-        this.navigateToDashboard();
+        this.loginUser();
       } else {
         this.notifierService.notify(
           'error',
@@ -134,13 +134,36 @@ export class RegistroUsuariosComponent implements OnInit {
     const user: Login = new Login();
     user.email = this.f.email.value;
     user.pass = this.f.pass.value;
-
     this.userService.registro(user).subscribe(
       (data) => {
+        console.log(data);
+        location.reload();
+      },
+      (error) => {
+        console.log('Error:', error);
+        console.log(error.status);
+        if (error.error == 'usuario ya existe') {
+          this.notifierService.notify('error', 'Email ya existe');
+        }
+      }
+    );
+  }
+
+  loginUser() {
+    const login: Login = new Login();
+    login.email = this.f.email.value;
+    login.pass = this.f.pass.value;
+    this.userService.login(login).subscribe(
+      (data: any) => {
+        localStorage.setItem('token', data.access_token);
+        this.router.navigate(['/Panel']);
         console.log(data);
       },
       (error) => {
         console.log('Error:', error);
+        if (error.error == 'Credenciales incorrectas') {
+          this.notifierService.notify('error', 'Usuario no encontrado');
+        }
       }
     );
   }
