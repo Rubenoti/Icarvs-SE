@@ -1,10 +1,68 @@
-.container-fluid {
-}
-.icon {
-  width: 80px;
-  height: 76px;
+.top {
+  background: linear-gradient(
+    89.54deg,
+    rgba(255, 255, 255, 0.38) 9.53%,
+    rgba(244, 249, 17, 0.223682) 24.57%,
+    rgba(249, 253, 42, 0.501567) 36.79%,
+    #f8fd11 48.55%,
+    rgba(173, 252, 6, 0.92) 60.83%,
+    rgba(85, 207, 9, 0.84) 73.07%
+  );
+  height: 267px;
+  .icon {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    &hover {
+      background: #302f2f;
+    }
+    .pointer {
+      cursor: pointer;
+    }
+  }
 }
 .logo {
-  width: 100px;
-  height: 40px;
+  position: absolute;
+  width: 130px;
+  height: 70px;
+  top: 1vw;
+}
+
+.white {
+  z-index: 5;
+  position: relative;
+  bottom: 10vw;
+  width: 700px;
+  height: 250px;
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  h1 {
+    color: black;
+    font-size: 35px;
+  }
+  h3 {
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    left: 5em;
+  }
+  p {
+    position: absolute;
+    color: rgba(19, 137, 0, 1);
+    font-size: 20px;
+    bottom: -0.5em;
+    left: 5.5em;
+  }
+}
+.main {
+  z-index: 1;
+  position: absolute;
+  background-size: cover;
+  background-image: url("../../assets/Dashboard/fondo.jpg");
+  background-repeat: no-repeat;
+  min-height: 100%;
+  top: 250px;
+  background-blend-mode: lighten;
+  filter: brightness(130%);
 }
