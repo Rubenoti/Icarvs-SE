@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 export class UserService {
   constructor(private httpClient: HttpClient) {}
 
-  singup(login: Login): Observable<any> {
+  registro(login: Login): Observable<any> {
     return this.httpClient.post(`${environment.apiUrl}/user`, login).pipe(
       catchError((error) => {
         return error;

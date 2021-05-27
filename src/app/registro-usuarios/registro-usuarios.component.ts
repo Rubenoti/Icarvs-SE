@@ -1,3 +1,5 @@
+import { Login } from './../models/login';
+import { UserService } from './../services/user.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -20,7 +22,8 @@ export class RegistroUsuariosComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private router: Router,
-    private notifierService: NotifierService
+    private notifierService: NotifierService,
+    private userService: UserService
   ) {
     this.mForm = this.fb.group(
       {
@@ -126,4 +129,19 @@ export class RegistroUsuariosComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  registroUser() {
+    const user: Login = new Login();
+    user.email = this.f.email.value;
+    user.pass = this.f.pass.value;
+
+    this.userService.registro(user).subscribe(
+      (data) => {
+        console.log(data);
+      },
+      (error) => {
+        console.log('Error:', error);
+      }
+    );
+  }
 }
