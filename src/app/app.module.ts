@@ -1,3 +1,4 @@
+import { SidebarComponent } from './Dashboard/sidebar/sidebar.component';
 import { DireccionComponent } from './opciones-usuarios/direccion/direccion.component';
 import { DondeComponent } from './opciones-usuarios/Donde/Donde.component';
 import { OurPoliticComponent } from './ourCompany/our-politic/our-politic.component';
@@ -29,8 +30,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { OpcionesUsuariosComponent } from './opciones-usuarios/opciones-usuarios.component';
 import { NotifierModule } from 'angular-notifier';
+import { RegistroEmpresasComponent } from './registro-empresas/registro-empresas.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     NavbarComponent,
@@ -50,7 +52,9 @@ import { NotifierModule } from 'angular-notifier';
     OpcionesUsuariosComponent,
     DondeComponent,
     DireccionComponent,
-  ],
+    SidebarComponent,
+      RegistroEmpresasComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

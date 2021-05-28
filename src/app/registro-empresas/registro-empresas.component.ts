@@ -3,15 +3,15 @@ import { UserService } from './../services/user.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { confirmedValidator } from '../registro-usuarios/validators';
+import { confirmedValidator } from '../registro-empresas/validators';
 import { NotifierService } from 'angular-notifier';
 
 @Component({
-  selector: 'app-registro-usuarios',
-  templateUrl: './registro-usuarios.component.html',
-  styleUrls: ['./registro-usuarios.component.scss'],
+  selector: 'app-registro-empresas',
+  templateUrl: './registro-empresas.component.html',
+  styleUrls: ['./registro-empresas.component.scss'],
 })
-export class RegistroUsuariosComponent implements OnInit {
+export class RegistroEmpresasComponent implements OnInit {
   mForm: FormGroup;
   isSent = false;
   showLogin = true;

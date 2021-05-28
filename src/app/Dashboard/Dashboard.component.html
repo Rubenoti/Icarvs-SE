@@ -2,15 +2,61 @@
   <div class="container justify-content-center icon">
     <img src="../../assets/icarvsIcon-transparent.png" (click)="goToHome()" class="img-fluid pointer" alt="...">
   </div>
+  <app-sidebar></app-sidebar>
   <div class="container justify-content-start logo">
     <img src="../../assets/logo2.png" class="img-fluid" alt="...">
   </div>
 </div>
+
 <div class="container white">
-  <h1>Bienvenido/a "nombre"</h1>
+  <h1 class="welcome">Bienvenido/a "nombre"</h1>
   <h3>¿Qué podemos hacer por ti hoy?</h3>
   <p>A continuación te ofrecemos nuestras herramientas</p>
 </div>
-<div class="container-fluid main">
+<div class="container-fluid main"></div>
 
-</div>
+<section class="container-fluid cards">
+  <article class="card card--1">
+    <div class="card__img"></div>
+    <a href="#" class="card_link">
+      <div class="card__img--hover"></div>
+    </a>
+    <div class="card__info">
+      <span class="card__category">Simulador</span>
+      <h3 class="card__title">¿Ya tenemos todos tus datos? Simula tu inversión!!</h3>
+    </div>
+  </article>
+
+  <article class="card card--2">
+    <div class="card__img"></div>
+    <a href="#" class="card_link">
+      <div class="card__img--hover"></div>
+    </a>
+    <div class="card__info">
+      <span class="card__category">Comparador</span>
+      <h3 class="card__title">Conoce un resumen de las ofertas del mercado electrico</h3>
+    </div>
+  </article>
+
+  <article class="card card--3">
+    <div class="card__img"></div>
+    <a href="#" class="card_link">
+      <div class="card__img--hover"></div>
+    </a>
+    <div class="card__info">
+      <span class="card__category">Compañias</span>
+      <h3 class="card__title">Te ofrecemos el mejor listado de compañias electricas para ti</h3>
+    </div>
+  </article>
+
+  <article class="card card--4">
+    <div class="card__img"></div>
+    <a href="#" class="card_link">
+      <div class="card__img--hover"></div>
+    </a>
+    <div class="card__info">
+      <span class="card__category">Instaladores</span>
+      <h3 class="card__title">Un breve resumen de nuestros colaboradores</h3>
+    </div>
+  </article>
+</section>
