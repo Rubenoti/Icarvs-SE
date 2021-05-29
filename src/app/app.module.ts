@@ -32,7 +32,7 @@ import { OpcionesUsuariosComponent } from './opciones-usuarios/opciones-usuarios
 import { NotifierModule } from 'angular-notifier';
 import { RegistroEmpresasComponent } from './registro-empresas/registro-empresas.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HomeComponent,
     NavbarComponent,
@@ -53,8 +53,8 @@ import { RegistroEmpresasComponent } from './registro-empresas/registro-empresas
     DondeComponent,
     DireccionComponent,
     SidebarComponent,
-    RegistroEmpresasComponent,
-  ],
+      RegistroEmpresasComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
