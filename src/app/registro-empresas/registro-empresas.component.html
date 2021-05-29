@@ -1,12 +1,11 @@
+<div class="container-fluid justify-content-end py-4 px-4">
+  <div class="zonebtn" id="testbutton" (click)="goToUsers()"></div>
+</div>
 <div id="wrapper">
   <div class="container">
     <div class="row align-items-center">
       <div class="col">
-        <img
-          src="../../assets/icarvsIcon-transparent.png"
-          (click)="goToHome()"
-          class="img-fluid pointer"
-        />
+        <img src="../../assets/icarvsIcon-transparent.png" (click)="goToHome()" class="img-fluid pointer" />
         <h1>
           Icarvs <br />
           <span>Empresas</span>
@@ -20,25 +19,11 @@
     <input type="radio" id="reset" name="action" value="reset" />
     <div id="inputs">
       <div>
-        <input
-          type="text"
-          class="is-invalid"
-          placeholder="email"
-          autofocus
-          formControlName="email"
-        />
+        <input type="text" class="is-invalid" placeholder="email" autofocus formControlName="email" />
         <div>
-          <input
-            type="password"
-            placeholder="contraseña"
-            formControlName="pass"
-          />
+          <input type="password" placeholder="contraseña" formControlName="pass" />
           <div>
-            <input
-              type="password"
-              placeholder="Repite contraseña"
-              formControlName="confirmPass"
-            />
+            <input type="password" placeholder="Repite contraseña" formControlName="confirmPass" />
             <input type="submit" value="resetear contraseña" />
             <div>
               <input type="submit" value="register" />
@@ -49,16 +34,11 @@
       </div>
     </div>
     <div id="labels">
-      <label (click)="mostrarLogin()" for="login"
-        >¿Ya estás registrado?<span> Login </span></label
-      >
-      <label (click)="mostrarReset()" for="reset"
-        >Recuperar contraseña<span> Reset </span></label
-      >
+      <label (click)="mostrarLogin()" for="login">¿Ya estás registrado?<span> Login </span></label>
+      <label (click)="mostrarReset()" for="reset">Recuperar contraseña<span> Reset </span></label>
       <label (click)="mostrarLogin()" for="login"><span> Atrás </span></label>
       <label (click)="mostrarRegister()" for="register">
-        ¿No estás registrado? <span> ¡Crea una cuenta!</span></label
-      >
+        ¿No estás registrado? <span> ¡Crea una cuenta!</span></label>
     </div>
   </form>
 </div>
