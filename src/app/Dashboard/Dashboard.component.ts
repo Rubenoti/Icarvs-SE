@@ -14,11 +14,4 @@ export class DashboardComponent implements OnInit {
   goToHome() {
     this.router.navigate(['/']);
   }
-  goToCompList() {
-    this.router.navigate(['/lista-companias']);
-  }
-
-  goToProfmpList() {
-    this.router.navigate(['/lista-instaladores']);
-  }
 }

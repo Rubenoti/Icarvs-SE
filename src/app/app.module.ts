@@ -31,9 +31,6 @@ import { DashboardComponent } from './Dashboard/Dashboard.component';
 import { OpcionesUsuariosComponent } from './opciones-usuarios/opciones-usuarios.component';
 import { NotifierModule } from 'angular-notifier';
 import { RegistroEmpresasComponent } from './registro-empresas/registro-empresas.component';
-import { CompanysListComponent } from './companys-list/companys-list.component';
-import { ProfessionalsListComponent } from './professionals-list/professionals-list.component';
-import { OpcionesEmpresasComponent } from './opciones-empresas/opciones-empresas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,9 +54,6 @@ import { OpcionesEmpresasComponent } from './opciones-empresas/opciones-empresas
     DireccionComponent,
     SidebarComponent,
     RegistroEmpresasComponent,
-    CompanysListComponent,
-    ProfessionalsListComponent,
-    OpcionesEmpresasComponent,
   ],
   imports: [
     BrowserModule,

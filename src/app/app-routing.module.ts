@@ -1,5 +1,3 @@
-import { ProfessionalsListComponent } from './professionals-list/professionals-list.component';
-import { CompanysListComponent } from './companys-list/companys-list.component';
 import { RegistroEmpresasComponent } from './registro-empresas/registro-empresas.component';
 import { HomeComponent } from './home/home.component';
 import { OurPoliticComponent } from './ourCompany/our-politic/our-politic.component';
@@ -28,8 +26,6 @@ const routes: Routes = [
   { path: 'Nuestra-politica', component: OurPoliticComponent },
   { path: 'Energia-verde', component: GreenEnergyComponent },
   { path: 'Panel', component: DashboardComponent },
-  { path: 'lista-companias', component: CompanysListComponent },
-  { path: 'lista-instaladores', component: ProfessionalsListComponent },
   {
     path: 'Opciones',
     component: OpcionesUsuariosComponent,
