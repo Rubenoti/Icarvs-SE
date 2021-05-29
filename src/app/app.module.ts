@@ -56,13 +56,10 @@ import { OpcionesEmpresasComponent } from './opciones-empresas/opciones-empresas
     DondeComponent,
     DireccionComponent,
     SidebarComponent,
-<<<<<<< Updated upstream
     RegistroEmpresasComponent,
     CompanysListComponent,
     ProfessionalsListComponent,
     OpcionesEmpresasComponent,
-=======
->>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
