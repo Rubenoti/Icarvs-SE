@@ -18,7 +18,9 @@ export class AppComponent {
           route.url.includes('OurCompany') ||
           route.url.includes('registro') ||
           route.url.includes('Opciones') ||
-          route.url.includes('Panel')
+          route.url.includes('Panel') ||
+          route.url.includes('lista-companias') ||
+          route.url.includes('lista-instaladores')
         ) {
           this.hideMenu = true;
         } else {
