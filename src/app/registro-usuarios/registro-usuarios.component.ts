@@ -105,6 +105,10 @@ export class RegistroUsuariosComponent implements OnInit {
     this.router.navigate(['/Opciones']);
   }
 
+  goToCompanys() {
+    this.router.navigate(['/registro-empresas']);
+  }
+
   resetPass() {}
 
   mostrarLogin() {
