@@ -1,5 +1,5 @@
+import { CompanyService } from './../services/company.service';
 import { Login } from './../models/login';
-import { UserService } from './../services/user.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -23,7 +23,7 @@ export class RegistroEmpresasComponent implements OnInit {
     private fb: FormBuilder,
     private router: Router,
     private notifierService: NotifierService,
-    private userService: UserService
+    private companyService: CompanyService
   ) {
     this.mForm = this.fb.group(
       {
@@ -138,7 +138,7 @@ export class RegistroEmpresasComponent implements OnInit {
     const user: Login = new Login();
     user.email = this.f.email.value;
     user.pass = this.f.pass.value;
-    this.userService.registro(user).subscribe(
+    this.companyService.RegistroEmpresa(user).subscribe(
       (data) => {
         console.log(data);
         location.reload();
@@ -157,10 +157,10 @@ export class RegistroEmpresasComponent implements OnInit {
     const login: Login = new Login();
     login.email = this.f.email.value;
     login.pass = this.f.pass.value;
-    this.userService.login(login).subscribe(
+    this.companyService.loginEmpresa(login).subscribe(
       (data: any) => {
         localStorage.setItem('token', data.access_token);
-        this.router.navigate(['/Panel']);
+        this.router.navigate(['/Opciones-empresas']);
         console.log(data);
       },
       (error) => {

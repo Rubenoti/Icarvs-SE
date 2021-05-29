@@ -199,16 +199,17 @@ body {
   width: 130px;
   height: 50px;
   border-radius: 180px;
+  border: 1.5px solid rgb(125, 233, 92);
   position: relative;
-  padding: 20px;
+  padding: 18px;
   background: linear-gradient(
     60deg,
-    #76e42d,
-    #0cc90c,
-    #85d42b,
-    #d6d311,
-    #bbdd3e,
-    #e7da22
+    #6af50d,
+    #78e978,
+    #a8cc7f,
+    #f8f407,
+    #e9dc2c,
+    #e4dd7e
   );
   cursor: pointer;
   line-height: 12px;
@@ -224,8 +225,9 @@ body {
   top: 15%;
   left: 10%;
   transition: 0.3s opacity ease-in-out;
-  filter: blur(15px);
-  opacity: 0;
+  filter: blur(10px);
+  opacity: 0.6;
+  transform: translateX(15px);
   background: linear-gradient(
     60deg,
     #76e42d,
@@ -240,16 +242,8 @@ body {
 #testbutton:hover:before {
   opacity: 1;
   transition: 0.3s opacity ease-in-out;
-  filter: blur(25px);
-  background: linear-gradient(
-    60deg,
-    #76e42d,
-    #0cc90c,
-    #85d42b,
-    #d6d311,
-    #bbdd3e,
-    #e7da22
-  );
+  filter: blur(22px);
+  background: linear-gradient(60deg, #58dd00, #eede03);
 }
 
 #testbutton:after {
@@ -257,7 +251,7 @@ body {
   text-align: center;
   line-height: 34px;
   font-size: 14px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   z-index: 5;
   position: absolute;
@@ -268,5 +262,13 @@ body {
   top: 10%;
   left: 4%;
   padding-top: 5px;
-  background-color: rgb(252, 252, 252);
+  background-color: linear-gradient(
+    60deg,
+    #76e42d,
+    #0cc90c,
+    #85d42b,
+    #d6d311,
+    #bbdd3e,
+    #e7da22
+  );
 }

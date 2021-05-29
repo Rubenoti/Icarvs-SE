@@ -35,14 +35,14 @@ body {
 }
 
 h1 {
-  background: -webkit-linear-gradient(#c0b707, rgb(26, 34, 20));
+  background: -webkit-linear-gradient(#a8cc7f, rgb(26, 34, 20));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 43px;
   margin: 0;
   span {
     font-size: 22px;
-    background: -webkit-linear-gradient(#0c0c0c, #c0b707);
+    background: -webkit-linear-gradient(#0c0c0c, #a8cc7f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -98,7 +98,7 @@ input {
   }
 
   &[type="submit"] {
-    background: #c0b707;
+    background: #a8cc7f;
     color: #fffefc;
     cursor: pointer;
   }
@@ -170,7 +170,7 @@ label {
   overflow: hidden;
   span {
     cursor: pointer;
-    color: #2c4d0d;
+    color: #c5b416;
   }
 }
 
@@ -187,16 +187,17 @@ label {
   width: 130px;
   height: 50px;
   border-radius: 180px;
+  border: 1.5px solid rgb(125, 233, 92);
   position: relative;
-  padding: 20px;
+  padding: 18px;
   background: linear-gradient(
     60deg,
-    #76e42d,
-    #0cc90c,
-    #85d42b,
-    #d6d311,
-    #bbdd3e,
-    #e7da22
+    #f8f407,
+    #e9dc2c,
+    #e4dd7e,
+    #6af50d,
+    #78e978,
+    #a8cc7f
   );
   cursor: pointer;
   line-height: 12px;
@@ -212,8 +213,9 @@ label {
   top: 15%;
   left: 10%;
   transition: 0.3s opacity ease-in-out;
-  filter: blur(15px);
-  opacity: 0;
+  filter: blur(10px);
+  opacity: 0.6;
+  transform: translateX(15px);
   background: linear-gradient(
     60deg,
     #76e42d,
@@ -228,16 +230,8 @@ label {
 #testbutton:hover:before {
   opacity: 1;
   transition: 0.3s opacity ease-in-out;
-  filter: blur(25px);
-  background: linear-gradient(
-    60deg,
-    #76e42d,
-    #0cc90c,
-    #85d42b,
-    #d6d311,
-    #bbdd3e,
-    #e7da22
-  );
+  filter: blur(22px);
+  background: linear-gradient(60deg, #58dd00, #eede03);
 }
 
 #testbutton:after {
@@ -245,7 +239,7 @@ label {
   text-align: center;
   line-height: 34px;
   font-size: 14px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   z-index: 5;
   position: absolute;
@@ -256,5 +250,13 @@ label {
   top: 10%;
   left: 4%;
   padding-top: 5px;
-  background-color: rgb(252, 252, 252);
+  background-color: linear-gradient(
+    60deg,
+    #76e42d,
+    #0cc90c,
+    #85d42b,
+    #d6d311,
+    #bbdd3e,
+    #e7da22
+  );
 }

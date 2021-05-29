@@ -160,7 +160,7 @@ export class RegistroUsuariosComponent implements OnInit {
     this.userService.login(login).subscribe(
       (data: any) => {
         localStorage.setItem('token', data.access_token);
-        this.router.navigate(['/Panel']);
+        this.router.navigate(['/Opciones']);
         console.log(data);
       },
       (error) => {

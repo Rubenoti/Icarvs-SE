@@ -1,3 +1,4 @@
+import { OpcionesEmpresasComponent } from './opciones-empresas/opciones-empresas.component';
 import { ProfessionalsListComponent } from './professionals-list/professionals-list.component';
 import { CompanysListComponent } from './companys-list/companys-list.component';
 import { RegistroEmpresasComponent } from './registro-empresas/registro-empresas.component';
@@ -41,6 +42,7 @@ const routes: Routes = [
       { path: 'Direccion', component: DireccionComponent },
     ],
   },
+  { path: 'Opciones-empresas', component: OpcionesEmpresasComponent },
 ];
 
 @NgModule({
