@@ -35,13 +35,9 @@ body {
 }
 
 h1 {
-<<<<<<< Updated upstream
   background: -webkit-linear-gradient(#c0b707, rgb(26, 34, 20));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-=======
-  color: #b3ab19;
->>>>>>> Stashed changes
   font-size: 43px;
   margin: 0;
   span {
@@ -178,11 +174,7 @@ label {
   overflow: hidden;
   span {
     cursor: pointer;
-<<<<<<< Updated upstream
     color: #2c4d0d;
-=======
-    color: #a8aa43;
->>>>>>> Stashed changes
   }
 }
 
@@ -195,7 +187,6 @@ label {
   font-weight: 600;
 }
 
-<<<<<<< Updated upstream
 body {
   height: 100vh;
   width: 100vw;
@@ -278,10 +269,4 @@ body {
   left: 4%;
   padding-top: 5px;
   background-color: rgb(252, 252, 252);
-=======
-img {
-  &:hover {
-    cursor: pointer;
-  }
->>>>>>> Stashed changes
 }

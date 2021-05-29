@@ -13,7 +13,6 @@ export class DashboardComponent implements OnInit {
 
   goToHome() {
     this.router.navigate(['/']);
-<<<<<<< Updated upstream
   }
   goToCompList() {
     this.router.navigate(['/lista-companias']);
@@ -21,7 +20,5 @@ export class DashboardComponent implements OnInit {
 
   goToProfmpList() {
     this.router.navigate(['/lista-instaladores']);
-=======
->>>>>>> Stashed changes
   }
 }
