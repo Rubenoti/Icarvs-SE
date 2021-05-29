@@ -97,6 +97,10 @@ export class RegistroUsuariosComponent implements OnInit {
     }
   }
 
+  navigateToInicio() {
+    this.router.navigate(['/']);
+  }
+
   navigateToDashboard() {
     this.router.navigate(['/Panel']);
   }

@@ -285,8 +285,13 @@
 
         &:hover,
         &:focus {
+<<<<<<< Updated upstream
           box-shadow: 0 0 4px 6px #e1f573;
           transform: translateY(-10px);
+=======
+          box-shadow: 0 0 4px 6px #dbdd7c;
+          transform: translateY(-15px);
+>>>>>>> Stashed changes
         }
       }
     }
