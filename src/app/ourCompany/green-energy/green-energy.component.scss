@@ -1,0 +1,150 @@
+.title-container {
+  height: 400px;
+  width: 100%;
+  background: url("../../../assets/green-energy/spencer-watson-dEOC8M_lmxI-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  .rectangle {
+    position: absolute;
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(0.5px);
+    mix-blend-mode: color-burn;
+    background: linear-gradient(
+      90.3deg,
+      rgba(133, 30, 30, 0.72) 18.12%,
+      rgba(163, 117, 47, 0.71) 39.78%,
+      rgba(202, 205, 47, 0.73) 62.66%,
+      rgba(205, 161, 47, 0) 87.02%
+    );
+  }
+  .rectangle-clone {
+    position: absolute;
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+      width: 100%;
+      margin-top: 160px;
+      text-align: center;
+      background-size: 100%;
+      background: radial-gradient(
+        52.65% 471.85% at 50.09% 62.12%,
+        #c7fd90 0%,
+        #8ad73b 100%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+      font-family: "Pattaya", sans-serif;
+      font-size: 3.5vw;
+    }
+  }
+}
+
+.cards-container {
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  height: 250px;
+  margin-top: 300px;
+  margin-bottom: 650px;
+  width: 100%;
+  h1 {
+    width: 100%;
+    font-size: calc(1em + 1vw);
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    position: relative;
+    top: 1em;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+  }
+  img {
+    height: 270px;
+  }
+
+  .row {
+    margin-top: 100px;
+
+    .card {
+      background-color: rgba(199, 253, 144, 0.5);
+      box-shadow: 10px 10px -6px black;
+      h5 {
+        color: rgb(15, 29, 15);
+        font-weight: 600;
+        text-align: center;
+        padding-top: 20px;
+      }
+      p {
+        padding: 25px;
+      }
+    }
+  }
+
+  .btncontainer {
+    position: relative;
+    margin: auto;
+    height: fit-content;
+    .buttons {
+      position: absolute;
+      display: block;
+      text-align: center;
+    }
+
+    .btn-hover {
+      position: relative;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: fit-content;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(34, 54, 15);
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      padding: 15px;
+
+      border-radius: 50px;
+      moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .btn-hover:hover {
+      background-position: 100% 0;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .btn-hover:focus {
+      outline: none;
+    }
+
+    .btn-hover.color-6 {
+      background-image: linear-gradient(to right, #dbf068, #a8e645, #f3e074);
+      box-shadow: 0 4px 15px 0 rgba(22, 44, 16, 0.75);
+    }
+  }
+}

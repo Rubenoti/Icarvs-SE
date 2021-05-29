@@ -285,7 +285,8 @@
 
         &:hover,
         &:focus {
-          box-shadow: 0 0 4px 6px #568a12;
+          box-shadow: 0 0 4px 6px #e1f573;
+          transform: translateY(-10px);
         }
       }
     }

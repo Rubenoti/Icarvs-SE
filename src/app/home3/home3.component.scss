@@ -54,3 +54,12 @@ img {
     }
   }
 }
+
+.carousel-container {
+  position: relative;
+  img {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 0px;
+  }
+}

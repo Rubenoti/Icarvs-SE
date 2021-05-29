@@ -14,6 +14,7 @@ body {
   color: red;
 }
 .img-fluid {
+  margin-top: 40px;
   width: 80px;
   height: 80px;
 }
@@ -34,13 +35,17 @@ body {
 }
 
 h1 {
-  color: #a19a0f;
+  background: -webkit-linear-gradient(#c0b707, rgb(26, 34, 20));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 43px;
   margin: 0;
-}
-h2 {
-  color: #349e97;
-  margin: 0;
+  span {
+    font-size: 22px;
+    background: -webkit-linear-gradient(#0c0c0c, #c0b707);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 form {
@@ -165,7 +170,7 @@ label {
   overflow: hidden;
   span {
     cursor: pointer;
-    color: #349e97;
+    color: #2c4d0d;
   }
 }
 

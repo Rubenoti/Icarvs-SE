@@ -1,3 +1,4 @@
+import { RegistroEmpresasComponent } from './registro-empresas/registro-empresas.component';
 import { HomeComponent } from './home/home.component';
 import { OurPoliticComponent } from './ourCompany/our-politic/our-politic.component';
 import { DireccionComponent } from './opciones-usuarios/direccion/direccion.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'Inicio', component: HomeComponent },
   { path: 'Blog', component: BlogComponent },
   { path: 'registro', component: RegistroUsuariosComponent },
+  { path: 'registro-empresas', component: RegistroEmpresasComponent },
   { path: 'Conocenos', component: AboutUsComponent },
   { path: 'Nuestra-politica', component: OurPoliticComponent },
   { path: 'Energia-verde', component: GreenEnergyComponent },
