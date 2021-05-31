@@ -34,6 +34,7 @@ import { RegistroEmpresasComponent } from './registro-empresas/registro-empresas
 import { CompanysListComponent } from './companys-list/companys-list.component';
 import { ProfessionalsListComponent } from './professionals-list/professionals-list.component';
 import { OpcionesEmpresasComponent } from './opciones-empresas/opciones-empresas.component';
+import { AuthInterceptorService } from './services/interceptors/auth-interceptor.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +77,14 @@ import { OpcionesEmpresasComponent } from './opciones-empresas/opciones-empresas
       // Custom options in here
     }),
   ],
-  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' }],
+  providers: [
+    {
+      provide: { MAT_DATE_LOCALE, HTTP_INTERCEPTORS },
+      useValue: 'es-ES',
+      useClass: AuthInterceptorService,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
