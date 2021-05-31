@@ -1,3 +1,181 @@
-<p>
-  opciones-empresas works!
-</p>
+<nav class="navbar navbar-light bg-light">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="#">
+      <img
+        src="../../../assets/icarvsIcon-transparent.png"
+        alt="icarvs"
+        width="40"
+        height="40"
+      />
+      <img
+        src="../../../assets/logo2.png"
+        alt="icarvs"
+        width="80"
+        height="25"
+      />
+    </a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="container general-container">
+    <div class="container switch-container w-100 justify-content-end mt-4">
+      <input
+        id="checkbox"
+        type="checkbox"
+        class="checkbox"
+        (change)="changeCheckbox($event)"
+      />
+      <label for="checkbox" class="switch">
+        <span class="switch__circle">
+          <span class="switch__circle-inner"></span>
+        </span>
+        <span class="switch__left">INSTALADOR</span>
+        <span class="switch__right">COMPAÑÍA</span>
+      </label>
+    </div>
+    <ng-container *ngIf="!showCups">
+      <p>Indíquenos sus datos</p>
+      <div class="info-container">
+        <div class="row mb-1">
+          <div class="col-6 column-1 mt-4">
+            <div class="form-floating mb-3">
+              <input
+                type="name"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Name"
+              />
+              <label for="floatingInput">Nombre</label>
+            </div>
+          </div>
+          <div class="col-6 column-1 mt-4">
+            <div class="form-floating">
+              <input
+                type="cif "
+                class="form-control"
+                id="fotingProvince "
+                placeholder="cif"
+              />
+              <label for="floatingStreet ">CIF</label>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <div class="col-6 column-1 mt-1">
+            <div class="form-floating">
+              <input
+                type="adress "
+                class="form-control"
+                id="floatingCP "
+                placeholder="adress "
+              />
+              <label for="floatingCP ">Ubicación fiscal</label>
+            </div>
+          </div>
+          <div class="col-6 column-1">
+            <div class="form-floating mb-3">
+              <input
+                type="tlf "
+                class="form-control"
+                id="floatingInput "
+                placeholder="tlf "
+              />
+              <label for="floatingInput ">Tfn. comercial</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 column-1">
+            <div class="form-floating">
+              <input
+                type="tlf2"
+                class="form-control"
+                id="floatingNum "
+                placeholder="tlf2 "
+              />
+              <label for="floatingStreet">Tfn. de atención</label>
+            </div>
+          </div>
+          <div class="col-6 column-1">
+            <div class="form-floating">
+              <input
+                type="door"
+                class="form-control"
+                id="floatingDoor"
+                placeholder="Door "
+              />
+              <label for="floatingCP ">Web</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 column2 text-center mt-5">
+          <button type="button" class="button-adress">Continuar</button>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="showCups">
+      <p>Indíquenos sus datos</p>
+      <div class="info-container">
+        <div class="row mb-1">
+          <div class="col-6 column-1 mt-5">
+            <div class="form-floating mb-3">
+              <input
+                type="name"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Name"
+              />
+              <label for="floatingInput">Nombre</label>
+            </div>
+          </div>
+          <div class="col-6 column-1 mt-5">
+            <div class="form-floating">
+              <input
+                type="cif "
+                class="form-control"
+                id="fotingProvince "
+                placeholder="cif"
+              />
+              <label for="floatingStreet ">CIF/DNI</label>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <div class="col-6 column-1 mt-2">
+            <div class="form-floating">
+              <input
+                type="adress "
+                class="form-control"
+                id="floatingCP "
+                placeholder="adress "
+              />
+              <label for="floatingCP ">Ubicación</label>
+            </div>
+          </div>
+          <div class="col-6 column-1 mt-2">
+            <div class="form-floating mb-3">
+              <input
+                type="tlf "
+                class="form-control"
+                id="floatingInput "
+                placeholder="tlf "
+              />
+              <label for="floatingInput ">Tfn. de contacto</label>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <div class="col-12 column2 text-center mt-5">
+            <button type="button" class="button-adress">Continuar</button>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="container turn-back justify-content-center">
+  <button class="link" (click)="hayElectricidad()">Volver atrás</button>
+</div>

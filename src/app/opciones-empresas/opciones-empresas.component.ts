@@ -1,15 +1,23 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-opciones-empresas',
   templateUrl: './opciones-empresas.component.html',
-  styleUrls: ['./opciones-empresas.component.scss']
+  styleUrls: ['./opciones-empresas.component.scss'],
 })
 export class OpcionesEmpresasComponent implements OnInit {
+  showCups = false;
 
-  constructor() { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  hayElectricidad() {
+    this.router.navigate(['/Opciones-empresas']);
   }
 
+  changeCheckbox(evento: any) {
+    this.showCups = evento.target.checked;
+  }
 }

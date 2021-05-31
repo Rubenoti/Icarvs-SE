@@ -42,7 +42,10 @@ const routes: Routes = [
       { path: 'Direccion', component: DireccionComponent },
     ],
   },
-  { path: 'Opciones-empresas', component: OpcionesEmpresasComponent },
+  {
+    path: 'Opciones-empresas',
+    component: OpcionesEmpresasComponent,
+  },
 ];
 
 @NgModule({
