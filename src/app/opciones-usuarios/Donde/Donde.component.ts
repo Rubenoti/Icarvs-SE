@@ -11,7 +11,20 @@ export class DondeComponent implements OnInit {
 
   ngOnInit() {}
 
-  donde() {
+  opcion1() {
     this.router.navigate(['/Opciones/Hay-electricidad']);
+    localStorage.setItem('Donde', 'Vivienda unifamiliar');
+  }
+  opcion2() {
+    this.router.navigate(['/Opciones/Hay-electricidad']);
+    localStorage.setItem('Donde', 'Comunidad de vecinos');
+  }
+  opcion3() {
+    this.router.navigate(['/Opciones/Hay-electricidad']);
+    localStorage.setItem('Donde', 'Piso');
+  }
+  opcion4() {
+    this.router.navigate(['/Opciones/Hay-electricidad']);
+    localStorage.setItem('Donde', 'Empresa o negocio');
   }
 }

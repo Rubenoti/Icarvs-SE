@@ -1,18 +1,8 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container justify-content-center">
     <a class="navbar-brand" href="#">
-      <img
-        src="../../../assets/icarvsIcon-transparent.png"
-        alt="icarvs"
-        width="40"
-        height="40"
-      />
-      <img
-        src="../../../assets/logo2.png"
-        alt="icarvs"
-        width="80"
-        height="25"
-      />
+      <img src="../../../assets/icarvsIcon-transparent.png" alt="icarvs" width="40" height="40" />
+      <img src="../../../assets/logo2.png" alt="icarvs" width="80" height="25" />
     </a>
   </div>
 </nav>
@@ -26,18 +16,14 @@
     <div class="container info-container">
       <div class="row">
         <div class="col-6 column1">
-          <img
-            src="../../../assets/opciones-usuarios/Cityscapes - Downtown.png"
-            class="d-block"
-            alt="ciudad"
-          />
+          <img src="../../../assets/opciones-usuarios/Cityscapes - Downtown.png" class="d-block" alt="ciudad" />
         </div>
         <div class="col-6 column2">
-          <ul class="list-group" (click)="donde()">
-            <li class="list-group-item">Vivienda unifamiliar</li>
-            <li class="list-group-item">Comunidad de vecinos</li>
-            <li class="list-group-item">Piso</li>
-            <li class="list-group-item">Empresa/negocio</li>
+          <ul class="list-group">
+            <li class="list-group-item" (click)="opcion1()">Vivienda unifamiliar</li>
+            <li class="list-group-item" (click)="opcion2()">Comunidad de vecinos</li>
+            <li class="list-group-item" (click)="opcion3()">Piso</li>
+            <li class="list-group-item" (click)="opcion4()">Empresa/negocio</li>
           </ul>
         </div>
       </div>
@@ -45,7 +31,5 @@
   </div>
 </div>
 <div class="container turn-back justify-content-center">
-  <a class="link" [routerLink]="['/']" routerLinkActive="router-link-active"
-    >Volver atrás</a
-  >
+  <a class="link" [routerLink]="['/']" routerLinkActive="router-link-active">Volver atrás</a>
 </div>

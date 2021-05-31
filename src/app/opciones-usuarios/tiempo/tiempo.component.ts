@@ -11,8 +11,13 @@ export class TiempoComponent implements OnInit {
 
   ngOnInit() {}
 
-  direccion() {
+  opcion1() {
     this.router.navigate(['/Opciones/Direccion']);
+    localStorage.setItem('tiempo', 'Mas de un año');
+  }
+  opcion2() {
+    this.router.navigate(['/Opciones/Direccion']);
+    localStorage.setItem('tiempo', 'Menos de un año');
   }
 
   hayElectricidad() {

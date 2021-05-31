@@ -11,8 +11,13 @@ export class HayElectricidadComponent implements OnInit {
 
   ngOnInit() {}
 
-  hayElectricidad() {
+  opcion1() {
     this.router.navigate(['/Opciones/Tiempo']);
+    localStorage.setItem('hay-electricidad', 'Hay luz');
+  }
+  opcion2() {
+    this.router.navigate(['/Opciones/Tiempo']);
+    localStorage.setItem('hay-electricidad', 'No hay luz');
   }
 
   donde() {

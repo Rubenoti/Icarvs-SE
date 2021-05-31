@@ -1,18 +1,8 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container justify-content-center">
     <a class="navbar-brand" href="#">
-      <img
-        src="../../../assets/icarvsIcon-transparent.png"
-        alt="icarvs"
-        width="40"
-        height="40"
-      />
-      <img
-        src="../../../assets/logo2.png"
-        alt="icarvs"
-        width="80"
-        height="25"
-      />
+      <img src="../../../assets/icarvsIcon-transparent.png" alt="icarvs" width="40" height="40" />
+      <img src="../../../assets/logo2.png" alt="icarvs" width="80" height="25" />
     </a>
   </div>
 </nav>
@@ -22,16 +12,12 @@
     <div class="container info-container">
       <div class="row">
         <div class="col-6 column1">
-          <img
-            src="../../../assets/opciones-usuarios/Open Doodles - Reading.png"
-            class="d-block"
-            alt="home"
-          />
+          <img src="../../../assets/opciones-usuarios/Open Doodles - Reading.png" class="d-block" alt="home" />
         </div>
         <div class="col-6 column2">
-          <ul class="list-group" (click)="direccion()">
-            <li class="list-group-item">Más de un año</li>
-            <li class="list-group-item">Menos de un año</li>
+          <ul class="list-group">
+            <li class="list-group-item" (click)="opcion1()">Más de un año</li>
+            <li class="list-group-item" (click)="opcion2()">Menos de un año</li>
           </ul>
         </div>
       </div>
@@ -39,10 +25,5 @@
   </div>
 </div>
 <div class="container turn-back justify-content-center">
-  <a
-    class="link"
-    (click)="hayElectricidad()"
-    routerLinkActive="router-link-active"
-    >Volver atrás</a
-  >
+  <a class="link" (click)="hayElectricidad()" routerLinkActive="router-link-active">Volver atrás</a>
 </div>
