@@ -1,3 +1,4 @@
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,19 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DireccionComponent implements OnInit {
   showCups = false;
-  localidad = document.getElementById('floatingInput');
-  provincia = document.getElementById('fotingProvince');
-  CodigoPostal = document.getElementById('floatingCP');
-  calle = document.getElementById('floatingStreet');
-  numero = document.getElementById('floatingNum');
-  puerta = document.getElementById('floatingDoor');
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private fb: FormBuilder,
+    private fg: FormGroup
+  ) {}
 
   ngOnInit() {}
-  guardarDatos() {
-    //localStorage.setItem('localidad');
-  }
 
   hayElectricidad() {
     this.router.navigate(['/Opciones/Tiempo']);
