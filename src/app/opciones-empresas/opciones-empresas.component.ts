@@ -1,3 +1,4 @@
+import { CompanyService } from './../services/company.service';
 import { NotifierService } from 'angular-notifier';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -18,7 +19,8 @@ export class OpcionesEmpresasComponent implements OnInit {
   constructor(
     private router: Router,
     private fb: FormBuilder,
-    private notifierservice: NotifierService
+    private notifierservice: NotifierService,
+    private companyService: CompanyService
   ) {
     this.cForm = this.fb.group({
       nombreCompania: ['', [Validators.required, Validators.minLength(2)]],
