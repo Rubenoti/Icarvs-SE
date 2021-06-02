@@ -140,6 +140,7 @@ export class RegistroUsuariosComponent implements OnInit {
     user.pass = this.f.pass.value;
     this.userService.registro(user).subscribe(
       (data) => {
+        localStorage.setItem('token', data.access_token);
         console.log(data);
         this.router.navigate(['/Opciones']);
       },

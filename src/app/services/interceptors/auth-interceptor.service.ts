@@ -12,7 +12,7 @@ import { Injectable } from '@angular/core';
 })
 export class AuthInterceptorService {
   constructor() {}
-  intercep(
+  intercept(
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
