@@ -27,4 +27,11 @@ export class UserService {
       })
     );
   }
+  guardarDatos(data: any): Observable<any> {
+    return this.httpClient.put(`${environment.apiUrl}/data`, data).pipe(
+      catchError((error) => {
+        return throwError(error);
+      })
+    );
+  }
 }

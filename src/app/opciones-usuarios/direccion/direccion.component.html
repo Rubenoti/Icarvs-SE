@@ -1,18 +1,8 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container justify-content-center">
     <a class="navbar-brand" href="#">
-      <img
-        src="../../../assets/icarvsIcon-transparent.png"
-        alt="icarvs"
-        width="40"
-        height="40"
-      />
-      <img
-        src="../../../assets/logo2.png"
-        alt="icarvs"
-        width="80"
-        height="25"
-      />
+      <img src="../../../assets/icarvsIcon-transparent.png" alt="icarvs" width="40" height="40" />
+      <img src="../../../assets/logo2.png" alt="icarvs" width="80" height="25" />
     </a>
   </div>
 </nav>
@@ -20,12 +10,7 @@
 <div class="container">
   <div class="container general-container">
     <div class="container switch-container w-100 justify-content-end mt-4">
-      <input
-        id="checkbox"
-        type="checkbox"
-        class="checkbox"
-        (change)="changeCheckbox($event)"
-      />
+      <input id="checkbox" type="checkbox" class="checkbox" (change)="changeCheckbox($event)" />
       <label for="checkbox" class="switch">
         <span class="switch__circle">
           <span class="switch__circle-inner"></span>
@@ -41,37 +26,21 @@
           <div class="row mb-1">
             <div class="col-5 column-1 mt-5">
               <div class="form-floating mb-3">
-                <input
-                  type="city"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="City"
-                  formControlName="ciudad"
-                />
+                <input type="city" class="form-control" id="floatingInput" placeholder="City"
+                  formControlName="ciudad" />
                 <label for="floatingInput">Localidad</label>
               </div>
             </div>
             <div class="col-5 column-1 mt-5">
               <div class="form-floating">
-                <input
-                  type="province "
-                  class="form-control"
-                  id="flotaingProvince"
-                  placeholder="Province "
-                  formControlName="provincia"
-                />
+                <input type="province " class="form-control" id="flotaingProvince" placeholder="Province "
+                  formControlName="provincia" />
                 <label for="flotaingProvince">Provincia</label>
               </div>
             </div>
             <div class="col-2 column-1 mt-5">
               <div class="form-floating">
-                <input
-                  type="CP"
-                  class="form-control"
-                  id="floatingCP "
-                  placeholder="CP "
-                  formControlName="cp"
-                />
+                <input type="CP" class="form-control" id="floatingCP " placeholder="CP " formControlName="cp" />
                 <label for="floatingCP ">C.P.</label>
               </div>
             </div>
@@ -79,49 +48,27 @@
           <div class="row">
             <div class="col-6 column-1">
               <div class="form-floating mb-3">
-                <input
-                  type="street "
-                  class="form-control"
-                  id="floatingStreet "
-                  placeholder="Street "
-                  formControlName="calle"
-                />
+                <input type="street " class="form-control" id="floatingStreet " placeholder="Street "
+                  formControlName="calle" />
                 <label for="floatingStreet ">Calle</label>
               </div>
             </div>
             <div class="col-2 column-1">
               <div class="form-floating">
-                <input
-                  type="num"
-                  class="form-control"
-                  id="floatingNum "
-                  placeholder="Num "
-                  formControlName="num"
-                />
+                <input type="num" class="form-control" id="floatingNum " placeholder="Num " formControlName="num" />
                 <label for="floatingNum">Nº</label>
               </div>
             </div>
             <div class="col-4 column-1">
               <div class="form-floating">
-                <input
-                  type="door"
-                  class="form-control"
-                  id="floatingDoor"
-                  placeholder="Door "
-                  formControlName="puerta"
-                />
+                <input type="door" class="form-control" id="floatingDoor" placeholder="Door "
+                  formControlName="puerta" />
                 <label for="floatingDoor ">Portal/Piso/Puerta</label>
               </div>
             </div>
           </div>
           <div class="col-12 column2 text-center mt-5">
-            <button
-              type="submit"
-              class="button-adress"
-              data-toggle="modal"
-              data-target="#exampleModal"
-              (click)="validarDireccion()"
-            >
+            <button type="submit" class="button-adress" (click)="validarDireccion()">
               Continuar
             </button>
           </div>
@@ -138,26 +85,15 @@
             <div class="col-8 column-1 mt-5">
               <a>CUPS*¿Qué es?</a>
               <div class="form-floating mb-3">
-                <input
-                  type="cups"
-                  class="form-control"
-                  id="floatingInput"
-                  placeholder="cups"
-                  formControlName="cups"
-                />
+                <input type="cups" class="form-control" id="floatingInput" placeholder="cups" formControlName="cups" />
                 <label for="floatingInput">ESXXXXXXXXXXXXXXXXXX</label>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-12 column2 text-center mt-2">
-              <button
-                type="submit"
-                class="button-adress"
-                data-toggle="modal"
-                data-target="#exampleModal"
-                (click)="validarCups()"
-              >
+              <button type="submit" class="button-adress" data-toggle="modal" data-target="#exampleModal"
+                (click)="validarCups()">
                 Continuar
               </button>
             </div>
@@ -180,26 +116,14 @@
 </div>
 
 <!-- Modal -->
-<div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">
           Registro realizado con éxito
         </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-dismiss="modal"
-          aria-label="Close"
-          (click)="goToLogin()"
-        ></button>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close" (click)="goToLogin()"></button>
       </div>
       <div class="modal-body">
         Sus datos han sido registrados correctamente, próximamente nos pondremos
@@ -208,13 +132,7 @@
         ¡Gracias por su tiempo!
       </div>
       <div class="modal-footer">
-        <button
-          type="button"
-          class="btn btn-secondary"
-          style="background-color: rgb(15, 65, 15)"
-          data-dismiss="modal"
-          (click)="goToLogin()"
-        >
+        <button type="button" class="btn btn-secondary" style="background-color: rgb(15, 65, 15)" data-dismiss="modal">
           Aceptar
         </button>
       </div>

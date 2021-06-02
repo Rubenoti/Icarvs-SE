@@ -79,8 +79,11 @@ import { AuthInterceptorService } from './services/interceptors/auth-interceptor
   ],
   providers: [
     {
-      provide: { MAT_DATE_LOCALE, HTTP_INTERCEPTORS },
+      provide: MAT_DATE_LOCALE,
       useValue: 'es-ES',
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
       multi: true,
     },
