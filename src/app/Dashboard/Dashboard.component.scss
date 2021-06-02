@@ -8,7 +8,7 @@
     rgba(173, 252, 6, 0.92) 60.83%,
     rgba(85, 207, 9, 0.84) 73.07%
   );
-  height: 267px;
+  height: 200px;
   .icon {
     width: 100px;
     height: 100px;
@@ -31,15 +31,13 @@
   }
 }
 
-.white {
+.bienvenido {
   z-index: 5;
   position: relative;
-  bottom: 10vw;
+  bottom: 6vw;
+  left: 9vw;
   width: 700px;
   height: 250px;
-  background: #ffffff;
-  border: 2px solid #000000;
-  box-sizing: border-box;
   .welcome {
     color: black;
     font-size: 35px;
@@ -50,13 +48,6 @@
     font-size: 20px;
     left: 5em;
   }
-  p {
-    position: absolute;
-    color: rgba(19, 137, 0, 1);
-    font-size: 20px;
-    bottom: -0.5em;
-    left: 5.5em;
-  }
 }
 .main {
   z-index: -1;
@@ -64,178 +55,19 @@
   background-size: cover;
   background-image: url("../../assets/Dashboard/fondo.jpg");
   background-repeat: no-repeat;
-  min-height: 100%;
+  min-height: 470px;
   top: 250px;
   background-blend-mode: lighten;
   filter: contrast(2px);
   -webkit-filter: brightness(120%) blur(4px);
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-
-* {
-  box-sizing: border-box;
-}
-
-body,
-html {
-  font-family: "Roboto Slab", serif;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-}
-
-body {
-  background-color: #d2dbdd;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-  -webkit-align-items: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.cards {
-  z-index: 5;
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-}
-
-.card--1 .card__img,
-.card--1 .card__img--hover {
-  background-image: url("../../assets/Dashboard/bombilla.jpg");
-}
-
-.card--2 .card__img,
-.card--2 .card__img--hover {
-  background-image: url("../../assets/Dashboard/balanza.jpg");
-}
-.card--3 .card__img,
-.card--3 .card__img--hover {
-  background-image: url("../../assets/Dashboard/bombilla1.jpg");
-}
-
-.card--4 .card__img,
-.card--4 .card__img--hover {
-  background-image: url("../../assets/Dashboard/instaladores.jpg");
-}
-
-.card__like {
-  width: 18px;
-}
-
-.card__clock {
-  width: 15px;
-  vertical-align: middle;
-  fill: #ad7d52;
-}
-.card__time {
-  font-size: 12px;
-  color: #ad7d52;
-  vertical-align: middle;
-  margin-left: 5px;
-}
-
-.card__clock-info {
-  float: right;
-}
-
-.card__img {
-  visibility: hidden;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 235px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-.card__info-hover {
+.data {
   position: absolute;
-  padding: 16px;
-  width: 100%;
-  opacity: 0;
-  top: 0;
-}
-
-.card__img--hover {
-  transition: 0.2s all ease-out;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  position: absolute;
-  height: 235px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  top: 0;
-}
-.card {
-  margin-right: 25px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  background-color: #fff;
-  width: 33.3%;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
-}
-.card:hover {
-  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-  transform: scale(1.1, 1.1);
-}
-
-.card__info {
-  z-index: 2;
-  background-color: #fff;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  padding: 16px 24px 24px 24px;
-}
-
-.card__category {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: #868686;
-}
-
-.card__title {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  font-family: "Roboto Slab", serif;
-}
-
-.card__by {
-  font-size: 12px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-}
-
-.card__author {
-  font-weight: 600;
-  text-decoration: none;
-  color: #ad7d52;
-}
-
-.card:hover .card__img--hover {
-  height: 100%;
-  opacity: 0.3;
-}
-
-.card:hover .card__info {
-  background-color: transparent;
-  position: relative;
-}
-
-.card:hover .card__info-hover {
-  opacity: 1;
+  background-color: white;
+  width: 1000px;
+  height: 400px;
+  right: 15vw;
+  top: 16em;
+  text-align: center;
 }
