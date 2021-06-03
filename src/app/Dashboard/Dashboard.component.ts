@@ -1,3 +1,4 @@
+import { Profile } from './../models/profile';
 import { UserService } from './../services/user.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
@@ -10,6 +11,8 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
   constructor(private router: Router, private userService: UserService) {}
 
+  profile: Array<Profile> = [];
+
   ngOnInit() {
     this.loadData();
   }
@@ -17,6 +20,7 @@ export class DashboardComponent implements OnInit {
     this.userService.getUser().subscribe(
       (data) => {
         console.log(data);
+        this.profile = data;
       },
       (error) => {
         console.log('Error:', error);

@@ -26,12 +26,12 @@
   <div class="col-8">
     <div class="container data justify-content-center">
       <div class="row">
-        <div class="col-12 justify-content-center">
+        <div *ngFor="let item of profile" class="col-12 justify-content-center">
           <h4>Estos son tus datos registrados:</h4>
           <br />
 
           <h5>Lugar</h5>
-          <p></p>
+          <p>{{ item.donde }}</p>
           <h5>¿Electicidad instalada?</h5>
           <p></p>
           <h5>Tiempo de la instalación eléctrica</h5>
