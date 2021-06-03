@@ -34,4 +34,12 @@ export class UserService {
       })
     );
   }
+
+  getUser(): Observable<any> {
+    return this.httpClient.get(`${environment.apiUrl}/data`).pipe(
+      catchError((error) => {
+        return error;
+      })
+    );
+  }
 }
