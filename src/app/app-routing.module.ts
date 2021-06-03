@@ -18,6 +18,7 @@ import { MainHomeComponent } from './mainHome/mainHome.component';
 import { BlogComponent } from './Blog/Blog.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TuCuentaComponent } from './Dashboard/tu-cuenta/tu-cuenta.component';
 
 const routes: Routes = [
   { path: '', component: MainHomeComponent, pathMatch: 'full' },
@@ -28,7 +29,12 @@ const routes: Routes = [
   { path: 'Conocenos', component: AboutUsComponent },
   { path: 'Nuestra-politica', component: OurPoliticComponent },
   { path: 'Energia-verde', component: GreenEnergyComponent },
-  { path: 'Panel', component: DashboardComponent },
+  {
+    path: 'Panel',
+    component: DashboardComponent,
+  },
+  { path: 'tu-cuenta', component: TuCuentaComponent },
+
   { path: 'lista-companias', component: CompanysListComponent },
   { path: 'lista-instaladores', component: ProfessionalsListComponent },
   {

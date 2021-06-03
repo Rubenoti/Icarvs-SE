@@ -1,0 +1,29 @@
+.info-container {
+  width: 850px;
+  .table {
+    .table-text {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background-color: rgb(66, 95, 69);
+      &:hover {
+        background-color: rgb(48, 105, 55);
+      }
+    }
+    .btn-danger {
+      background-color: rgb(223, 121, 121);
+      &:hover {
+        background-color: rgb(221, 75, 75);
+      }
+    }
+  }
+}
+
+.btn-panel {
+  position: relative;
+  display: block;
+  margin-left: 40%;
+  text-align: center;
+}

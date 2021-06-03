@@ -41,7 +41,11 @@
   .welcome {
     color: black;
     font-size: 35px;
+    width: fit-content;
+    text-align: center;
+    margin-right: 50px;
   }
+
   h3 {
     position: absolute;
     color: black;
@@ -57,17 +61,55 @@
   background-repeat: no-repeat;
   min-height: 470px;
   top: 250px;
+  right: 400px;
   background-blend-mode: lighten;
   filter: contrast(2px);
   -webkit-filter: brightness(120%) blur(4px);
 }
 
 .data {
+  border: 1px solid black;
+  z-index: 0;
   position: absolute;
   background-color: white;
-  width: 1000px;
-  height: 400px;
-  right: 15vw;
-  top: 16em;
+  width: 34vw;
+  top: -140px;
+  left: 90%;
+  transform: translateX(-50%);
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  h4 {
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+
+  h5 {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+  .gestion {
+    background-color: rgba(43, 88, 12, 0.72);
+    color: white;
+    box-shadow: 4px 3px 4px rgba(22, 22, 22, 0.37);
+    background-color: rgb(255, 255, 253);
+    transition: all 0.3 ease-out;
+    border-radius: 50px;
+    box-shadow: 4px 3px 4px rgba(22, 22, 22, 0.37);
+    display: block;
+    text-align: center;
+    font-size: large;
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    color: black;
+    border: 0.4px solid black;
+
+    &:hover {
+      background-color: rgba(43, 88, 12, 0.72);
+      box-shadow: 4px 3px 4px rgba(22, 22, 22, 0.37);
+      color: black;
+    }
+  }
 }

@@ -1,26 +1,52 @@
 <div class="container-fluid top">
   <div class="container justify-content-center icon">
-    <img src="../../assets/icarvsIcon-transparent.png" (click)="goToHome()" class="img-fluid pointer" alt="..." />
+    <img
+      src="../../assets/icarvsIcon-transparent.png"
+      (click)="goToHome()"
+      class="img-fluid pointer"
+      alt="..."
+    />
   </div>
   <app-sidebar></app-sidebar>
   <div class="container justify-content-start logo">
-    <img src="../../assets/logo2.png" (click)="goToHome()" class="img-fluid pointer" alt="..." />
+    <img
+      src="../../assets/logo2.png"
+      (click)="goToHome()"
+      class="img-fluid pointer"
+      alt="..."
+    />
   </div>
 </div>
 <div class="container bienvenido">
-  <h1 class="welcome">Bienvenido/a "nombre"</h1>
+  <h1 class="welcome justify-content-center">Bienvenido/a "nombre"</h1>
   <h3>¿Qué podemos hacer por ti hoy?</h3>
-
 </div>
-<div class="container-fluid main"></div>
-<div class="contianer data justify-content-center">
-  <h4>Estos son los datos que tenemos de ti:</h4>
-  <h5>Lugar</h5>
-  <p></p>
-  <h5>¿Electicidad instalada?</h5>
-  <p></p>
-  <h5>Tiempo de la instalación eléctrica</h5>
-  <p></p>
-  <h5>Dirección</h5>
-  <p></p>
+<div class="container main"></div>
+<div class="row">
+  <div class="col-8">
+    <div class="container data justify-content-center">
+      <div class="row">
+        <div class="col-12 justify-content-center">
+          <h4>Estos son tus datos registrados:</h4>
+          <br />
+
+          <h5>Lugar</h5>
+          <p></p>
+          <h5>¿Electicidad instalada?</h5>
+          <p></p>
+          <h5>Tiempo de la instalación eléctrica</h5>
+          <p></p>
+          <h5>Dirección</h5>
+          <p></p>
+          <div
+            class="button gestion justify-content-end"
+            type="button"
+            [routerLink]="['/tu-cuenta']"
+          >
+            Gestionar datos
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

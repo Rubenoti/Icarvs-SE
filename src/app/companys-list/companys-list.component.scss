@@ -31,30 +31,30 @@
   }
 }
 
-.main {
-  background-color: black;
-  height: 250px;
-}
+// .main {
+//   background-color: black;
+//   height: 250px;
+// }
 
-.companys {
-  .f-col {
-    background-color: green;
-    height: 500px;
-  }
-  .s-col {
-    background-color: red;
-    height: 500px;
-  }
-}
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+// .companys {
+//   .f-col {
+//     background-color: green;
+//     height: 500px;
+//   }
+//   .s-col {
+//     background-color: red;
+//     height: 500px;
+//   }
+// }
+// @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+// @import url(https://fonts.googleapis.com/css?family=Raleway);
 
-a {
-  text-decoration: none;
-}
-.container {
-  text-align: center;
-}
+// a {
+//   text-decoration: none;
+// }
+// .container {
+//   text-align: center;
+// }
 .button {
   color: white;
   font-family: Raleway;
@@ -93,4 +93,34 @@ a {
 }
 .circle.alt {
   transform: translateX(160px);
+}
+
+.info-container {
+  width: 850px;
+  .table {
+    .table-text {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background-color: rgb(66, 95, 69);
+      &:hover {
+        background-color: rgb(48, 105, 55);
+      }
+    }
+    .btn-danger {
+      background-color: rgb(223, 121, 121);
+      &:hover {
+        background-color: rgb(221, 75, 75);
+      }
+    }
+  }
+}
+
+.btn-panel {
+  position: relative;
+  display: block;
+  margin-left: 40%;
+  text-align: center;
 }

@@ -35,6 +35,7 @@ import { CompanysListComponent } from './companys-list/companys-list.component';
 import { ProfessionalsListComponent } from './professionals-list/professionals-list.component';
 import { OpcionesEmpresasComponent } from './opciones-empresas/opciones-empresas.component';
 import { AuthInterceptorService } from './services/interceptors/auth-interceptor.service';
+import { TuCuentaComponent } from './Dashboard/tu-cuenta/tu-cuenta.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +62,7 @@ import { AuthInterceptorService } from './services/interceptors/auth-interceptor
     CompanysListComponent,
     ProfessionalsListComponent,
     OpcionesEmpresasComponent,
+    TuCuentaComponent,
   ],
   imports: [
     BrowserModule,
