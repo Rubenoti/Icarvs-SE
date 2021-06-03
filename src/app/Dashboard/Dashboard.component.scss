@@ -59,12 +59,13 @@
   background-size: cover;
   background-image: url("../../assets/Dashboard/fondo.jpg");
   background-repeat: no-repeat;
-  min-height: 470px;
+  height: 860px;
   top: 250px;
   right: 400px;
   background-blend-mode: lighten;
   filter: contrast(2px);
   -webkit-filter: brightness(120%) blur(4px);
+  box-shadow: 4px 3px 4px rgba(39, 209, 24, 0.37);
 }
 
 .data {
@@ -72,7 +73,7 @@
   z-index: 0;
   position: absolute;
   background-color: white;
-  width: 34vw;
+  width: 38vw;
   top: -140px;
   left: 90%;
   transform: translateX(-50%);

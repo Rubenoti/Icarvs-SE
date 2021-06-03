@@ -18,32 +18,42 @@
   </div>
 </div>
 <div class="container bienvenido">
-  <h1 class="welcome justify-content-center">Bienvenido/a "nombre"</h1>
+  <h1 class="welcome justify-content-center">Bienvenido/a</h1>
   <h3>¿Qué podemos hacer por ti hoy?</h3>
 </div>
 <div class="container main"></div>
-<div class="row">
-  <div class="col-8">
-    <div class="container data justify-content-center">
-      <div class="row">
-        <div *ngFor="let item of profile" class="col-12 justify-content-center">
-          <h4>Estos son tus datos registrados:</h4>
-          <br />
-
-          <h5>Lugar</h5>
-          <p>{{ item.donde }}</p>
-          <h5>¿Electicidad instalada?</h5>
-          <p></p>
-          <h5>Tiempo de la instalación eléctrica</h5>
-          <p></p>
-          <h5>Dirección</h5>
-          <p></p>
+<div>
+  <div class="row">
+    <div class="col-8">
+      <div class="container data justify-content-center">
+        <div class="row">
           <div
-            class="button gestion justify-content-end"
-            type="button"
-            [routerLink]="['/tu-cuenta']"
+            *ngFor="let item of profile"
+            class="col-12 justify-content-center"
           >
-            Gestionar datos
+            <h4>Estos son tus datos registrados:</h4>
+            <br />
+            <h5>Email</h5>
+            <p>{{ item.email }}</p>
+            <h5>Dirección</h5>
+            <h5>Calle</h5>
+            <p>{{ item.calle }}</p>
+            <h5>Número</h5>
+            <p>{{ item.numero }}</p>
+            <h5>Puerta</h5>
+            <p>{{ item.puerta }}</p>
+            <h5>Ciudad</h5>
+            <p>{{ item.ciudad }}</p>
+            <h5>Provincia</h5>
+            <p>{{ item.provincia }}</p>
+            <h5>Ciudad</h5>
+            <p>{{ item.codigoPostal }}</p>
+            <h5>¿Hay electicidad instalada?</h5>
+            <p>{{ item.hayElectricidad }}</p>
+            <h5>¿Dónde vas a realizar la instalación?</h5>
+            <p>{{ item.donde }}</p>
+            <h5>Tiempo de la instalación eléctrica</h5>
+            <p>{{ item.tiempo }}</p>
           </div>
         </div>
       </div>
