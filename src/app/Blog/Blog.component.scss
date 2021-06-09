@@ -8,6 +8,9 @@
   .firstPost {
     position: relative;
     display: inline-block;
+    .row1 {
+      height: fit-content;
+    }
   }
 
   h1 {
@@ -32,7 +35,6 @@
       font-style: normal;
       font-weight: bold;
       border: none;
-      background-size: 100%;
       background: linear-gradient(92.66deg, #959eaa 1.71%, #304126 35.22%);
       background-clip: text;
       -webkit-background-clip: text;
@@ -42,13 +44,15 @@
     }
   }
   .row {
-    height: 420px;
-
     .card {
-      height: 169px;
-      width: 254px;
+      height: 500px;
+      background-color: #c6cca8;
+      padding: 20px;
+
+      img {
+        height: fit-content;
+      }
       .card-text-01 {
-        background-size: 100%;
         background: linear-gradient(91.47deg, #b89c82 8.02%, #000000 76.98%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -60,7 +64,6 @@
         font-size: 20px;
       }
       .card-text-02 {
-        background-size: 100%;
         background: linear-gradient(91.42deg, #839624 30.95%, #000000 78.23%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -72,7 +75,6 @@
         font-size: 20px;
       }
       .card-text-03 {
-        background-size: 100%;
         background: linear-gradient(
           90.88deg,
           #cd9d87 18.26%,
